@@ -1,10 +1,10 @@
-
 import './App.css'
+import Home from './routes/home/Home'
 
 function App() {
   return (
     <>
-     <h1>Hello Space Traveler</h1>
+     <Home/>
     </>
   )
 }
