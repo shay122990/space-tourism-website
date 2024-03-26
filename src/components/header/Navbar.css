@@ -37,6 +37,11 @@ position: relative;
     color: var(--text-color-main);
     letter-spacing: 2px;
 }
+.nav-links:hover{
+    text-decoration: underline;
+    text-underline-offset: 38px; 
+  text-decoration-thickness: 4px;
+}
 span{
     font-weight: 600;
 }
