@@ -1,7 +1,8 @@
 import Navbar from "../../components/header/Navbar"
+import './Crew.css'
 const Crew = () => {
   return (
-    <div>   
+    <div className="crew-container">   
        <Navbar/> 
        Crew Page  
     </div>
