@@ -1,9 +1,9 @@
 import Navbar from "../../components/header/Navbar"
 const Crew = () => {
   return (
-    <div>
-       Crew Page     
+    <div>   
        <Navbar/> 
+       Crew Page  
     </div>
   )
 }

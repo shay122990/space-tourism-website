@@ -2,8 +2,8 @@ import Navbar from "../../components/header/Navbar"
 const Technology = () => {
   return (
     <div>
-      Technology Page
       <Navbar/>
+      Technology Page
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import Navbar from "../../components/header/Navbar"
 const Destination = () => {
   return (
-    <div>
-      Destination Page      
+    <div>    
       <Navbar/>
+      Destination Page  
     </div>
   )
 }

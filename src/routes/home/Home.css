@@ -1,3 +1,8 @@
-h1{
-    font-family: "Bellefair", serif;
+.home-container{
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
 }
