@@ -1,10 +1,14 @@
 
-const TabsMenu = ({ menuItems, onMenuItemClick }) => {
+const TabsMenu = ({ menuItems, onTabChange }) => {
+  const handleItemClick = (index) => {
+    onTabChange(index);
+  };
+
   return (
     <div>
-      {menuItems.map((menuItem, index) => (
-        <button key={index} onClick={() => onMenuItemClick(menuItem.id)}>
-          {menuItem.title}
+      {menuItems.map((item, index) => (
+        <button key={index} onClick={() => handleItemClick(index)}>
+          {item.name}
         </button>
       ))}
     </div>

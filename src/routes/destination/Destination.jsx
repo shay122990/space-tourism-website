@@ -1,27 +1,29 @@
-import { useState } from 'react';
+import  { useState } from 'react';
 import './Destination.css';
 import Navbar from '../../components/header/Navbar';
 import TabsMenu from '../../components/tab-menu/TabsMenu';
 import destinationsData from '../../data/destinations.json';
-console.log(destinationsData)
-const Destination = () => {
-  const [selectedDestination, setSelectedDestination] = useState(destinationsData.destinations[0]);
 
-  const handleMenuItemClick = (destination) => {
-    setSelectedDestination(destination); // Update selected destination content
+const Destination = () => {
+  const [selectedDestinationIndex, setSelectedDestinationIndex] = useState(0);
+
+  const handleMenuItemClick = (index) => {
+    setSelectedDestinationIndex(index);
   };
 
-  console.log('Selected Destination:', selectedDestination); // Log selectedDestination
+  const selectedDestination = destinationsData.destinations[selectedDestinationIndex];
+  console.log(selectedDestination); // Log the selected destination object
 
   return (
     <div className='destination-container'>
       <Navbar />
       <p><span>01</span> Pick your destination</p>
-      <TabsMenu menuItems={destinationsData.destinations} onMenuItemClick={handleMenuItemClick} />
-      
+      <TabsMenu menuItems={destinationsData.destinations} onTabChange={handleMenuItemClick} />
       <div className='destination-content'>
         <h2>{selectedDestination.name}</h2>
-        <img src={selectedDestination.images.webp} alt={selectedDestination.name} />
+        {console.log(selectedDestination.images.webp)}
+
+        <img src={selectedDestination.images} alt={selectedDestination.name} />
         <p>{selectedDestination.description}</p>
         <p>Distance: {selectedDestination.distance}</p>
         <p>Travel Time: {selectedDestination.travel}</p>
