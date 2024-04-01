@@ -12,7 +12,6 @@ const Destination = () => {
   };
 
   const selectedDestination = destinationsData.destinations[selectedDestinationIndex];
-  console.log(selectedDestination); // Log the selected destination object
 
   return (
     <div className='destination-container'>
