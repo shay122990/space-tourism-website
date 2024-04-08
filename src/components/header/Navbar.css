@@ -1,4 +1,4 @@
-.navbar-container{
+/* .nav-container{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -7,12 +7,14 @@
     width:98%;
     margin-left: 40px;
     padding-top: 20px;
+    position: absolute;
+    z-index: 1;
 }
 .logo-image{
     width: 48px;
     height: 48px;
 }
-.nav-items{
+.navbar{
     background-color:#ffffff16;
     backdrop-filter: blur(10px);
     display: flex;
@@ -28,7 +30,7 @@ position: relative;
   width: 35%;
   height: 1px;
   border:0 solid;
-  background-color: #ffffff16; /* Adjust color as needed */
+  background-color: #ffffff16; 
   margin-right: -2%;
   z-index: 1;
 }
@@ -44,4 +46,108 @@ position: relative;
 }
 span{
     font-weight: 600;
-}
+} */
+
+a {
+    text-decoration: none;
+    color: var(--text-color-main);
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 38px; 
+    text-decoration-thickness: 4px;
+  }
+  li {
+    list-style-type: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:98%;
+    margin-left: 40px;
+    padding-top: 20px;
+    position: absolute;
+    z-index: 1;
+  }
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+  .nav-lane{
+    position: relative;
+      width: 35%;
+      height: 1px;
+      border:0 solid;
+      background-color: #ffffff16; 
+      margin-right: -2%;
+      z-index: 1;
+    }
+  .nav-links {
+    display: flex;
+    background-color:#ffffff16;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height:96px;
+    gap:50px;
+  }
+  
+  .nav-links li {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  @media (max-width: 1088px) {
+    .nav-lane{
+        display: none;
+    }
+    strong{
+        display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar{
+        width: 100%;
+        justify-content: center;
+        gap: 60px;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-lane{
+      display: none;
+    }
+    strong{
+        display: none;
+    }
+    .nav-links-mobile {
+      list-style: none;
+      /* left: 30%; */
+      /* top: 60%; */
+      transition: all 0.5s ease-in-out;
+      /* width: 90%; */
+      background-color: white;
+    }
+    ul li {
+      padding: 42px;
+      transition: all 0.5s ease-in-out;
+      text-align: center;
+    }
+    .mobile-menu-icon {
+position: relative;      display: block;
+     right: 0;
+    }
+  }

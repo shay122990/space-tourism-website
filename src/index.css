@@ -1,9 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5; */
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
   text-align: center;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -14,6 +11,8 @@
   -moz-osx-font-smoothing: grayscale;
   --text-color-one: #D0D6F9;
   --text-color-main: #FFFFFF;
+  margin:0;
+  padding: 0;
 }
 h1,h2,h3,h4,h5{
   font-family: "Bellefair", serif;
@@ -32,9 +31,14 @@ a {
   text-decoration: inherit;
 }
 
-
 body {
    margin: 0;
+   background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.app-container{
+  position: relative;
 }
 
 

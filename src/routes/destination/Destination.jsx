@@ -1,11 +1,10 @@
 import './Destination.css';
-import Navbar from '../../components/header/Navbar';
 import destinationsData from '../../data/destinations.js'; 
 
 const Destination = () => {
   return (
     <div className='destination-container'>
-      <Navbar />
+      <div className="destinations-info-container">
       <p><span>01</span> Pick your destination</p>
       {destinationsData.map(destination => (
         <div key={destination.id} className='destination-content'>
@@ -16,6 +15,7 @@ const Destination = () => {
           <p>{destination.travel}</p>
         </div>
       ))}
+      </div>
     </div>
   );
 };

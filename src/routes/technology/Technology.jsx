@@ -1,10 +1,12 @@
-import Navbar from "../../components/header/Navbar"
+
 import './Technology.css'
 const Technology = () => {
   return (
     <div className="technology-container">
-      <Navbar/>
-      Technology Page
+<div className="technology-info-container">
+  <h2>Technology Page</h2>
+</div>
+      
     </div>
   )
 }
