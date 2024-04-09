@@ -58,15 +58,29 @@ a:hover {
   .mobile-menu-icon {
     display: none;
   }
-
-  @media (max-width: 1088px) {
+/* TABLET VIEW */
+  @media (max-width: 1440px) {
+    .navbar{
+      gap: 30%;
+      width: 100%;
+    }
+    .nav-links{
+      gap: 20px;
+   
+    }
     .nav-lane{
         display: none;
     }
     strong{
         display: none;
     }
+    .mobile-menu-icon {
+      display: none;
+    }
+    
   }
+
+  /* MOBILE VIEW */
   @media (max-width: 768px) {
     .navbar{
         display: flex;
@@ -74,7 +88,7 @@ a:hover {
         justify-content: center;
         gap: 70%;
         padding: 0;
-        margin: 20px 0 0 0;
+        margin: 26px 0 0 0;
     }
     .nav-links {
       display: none;

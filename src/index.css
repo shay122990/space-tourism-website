@@ -4,7 +4,7 @@
   text-align: center;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0B0D17;
+  --background-color: #0B0D17;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
