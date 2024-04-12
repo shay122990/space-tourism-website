@@ -7,26 +7,22 @@
     height:100vh;
     overflow: hidden;
 }
-.home-info-container{
-    margin-top: 200px;
-}
+
 .space-info-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap:30%;
-    border: solid red 1px;
     width: 100%;
-    height: auto;
+    /* height:100vh; */
+    margin-top: 20%;
 }
 .main-info{
     display: flex;
     flex-direction: column;
     text-align: left;
-    border:solid 1px green;
-    width: 450px;
-    height: 382px;
+    width: 490px;
 }
 .intro{
     text-transform: uppercase;
@@ -39,19 +35,18 @@
 .space{
     font-size: 150px;
     color: var(--text-color-main);
-    font-family: 'Bellefair',sans-serif;
+    text-transform: uppercase;
+    margin: 0;
 }
 .space-info{
     font-size: 18px;
     line-height: 32px;
-    font-family: "Barlow",sans-serif;
     font-weight: 400;
     color: var(--text-color-one);
 }
 .explore-btn-container{
-    border: solid 1px blue;
     height: auto;
-    width:274px;
+    margin-top: 80px;
 }
 
 .explore-btn{
@@ -59,12 +54,44 @@
     border-radius: 50%;
     width: 274px;
     height: 274px;
+    text-transform: uppercase;
+    color: var(--background-color);
     background-color: var(--text-color-main);
     border: none;
-    color: var(--text-color-one);
+    font-family: 'Bellefair', sans-serif;
 }
 .explore-btn-container:hover{
     border-radius: 50%;
-    transition: ease-in-out 0.2s;
-    box-shadow: #707073 0px 0px 2px 76px;
+    transition:   box-shadow 687ms ease-out;
+    box-shadow: #7070736e 0px 0px 2px 76px;
 }
+/* TABLET VIEW */
+@media (max-width: 1440px) {
+    .home-container{
+        background-image: url(../../assets/home/background-home-tablet.jpg);
+    }
+    .space-info-container{
+        flex-direction: column;
+        gap: 0;
+        margin-top: 20%;
+    }
+    .main-info{
+        text-align: center;
+        width: 500px;
+    }
+    .explore-btn{
+        width:242px;
+        height: 242px;
+    }
+    .explore-btn-container:hover{
+        box-shadow: #7070736e 0px 0px 2px 56px;
+    }
+
+}
+
+  /* MOBILE VIEW */
+  @media (max-width: 768px) {
+    .home-container{
+        background-image: url(../../assets/home/background-home-mobile.jpg);
+    }
+  }

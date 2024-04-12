@@ -10,3 +10,12 @@
 .technology-info-container{
     margin-top: 200px;
 }
+/* TABLET VIEW */
+@media (max-width: 1440px) {
+    
+}
+
+  /* MOBILE VIEW */
+  @media (max-width: 768px) {
+
+  }

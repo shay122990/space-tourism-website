@@ -1,7 +1,5 @@
 :root {
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  text-align: center;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   --background-color: #0B0D17;
@@ -11,8 +9,8 @@
   -moz-osx-font-smoothing: grayscale;
   --text-color-one: #D0D6F9;
   --text-color-main: #FFFFFF;
-  margin:0;
-  padding: 0;
+  overflow: hidden;
+  text-align: center;
 }
 h1,h2,h3,h4,h5{
   font-family: "Bellefair", serif;
@@ -23,23 +21,28 @@ text-transform: uppercase;
 list-style-type: none;
 }
 p{
-  font-family: "Barlow Condensed", sans-serif ;
+  font-family: "Barlow", sans-serif ;
 } 
-
 
 a {
   text-decoration: inherit;
 }
 
 body {
-   margin: 0;
-   background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
   background-position: center;
   min-height: 100vh;
 }
 .app-container{
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
 
 
 

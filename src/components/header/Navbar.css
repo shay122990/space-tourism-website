@@ -15,10 +15,10 @@ a:hover {
   }
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width:98%;
+    width:100%;
     margin-left: 40px;
     padding-top: 20px;
     position: absolute;
@@ -61,12 +61,16 @@ a:hover {
 /* TABLET VIEW */
   @media (max-width: 1440px) {
     .navbar{
-      gap: 30%;
+      gap: 0;
       width: 100%;
+      margin: 0;
+      padding: 0;
     }
     .nav-links{
-      gap: 20px;
-   
+      justify-content: space-around;
+      margin-top: 0;
+      gap:12px;
+      padding-left: 20px
     }
     .nav-lane{
         display: none;
@@ -76,9 +80,15 @@ a:hover {
     }
     .mobile-menu-icon {
       display: none;
+    } 
+    .logo-image{
+      padding-left: 50px;
     }
-    
+    a{
+      font-size: 14px;
+    }
   }
+  
 
   /* MOBILE VIEW */
   @media (max-width: 768px) {
