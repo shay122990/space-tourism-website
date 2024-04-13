@@ -45,9 +45,10 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 55%;
+    width: 50%;
+    gap: 8%;
     height:96px;
-    gap:50px;
+    margin: 0;
   }
   
   .nav-links li {
@@ -58,8 +59,17 @@ a:hover {
   .mobile-menu-icon {
     display: none;
   }
+  /* reponsive */
+  @media (max-width:1211px){
+    .nav-links{
+      width: 80%;
+    }
+    .nav-lane{
+      width: 18%;
+    }
+  }
 /* TABLET VIEW */
-  @media (max-width: 1440px) {
+  @media (max-width: 768px) {
     .navbar{
       gap: 0;
       width: 100%;
@@ -67,10 +77,11 @@ a:hover {
       padding: 0;
     }
     .nav-links{
-      justify-content: space-around;
+      width: 450px;
       margin-top: 0;
-      gap:12px;
-      padding-left: 20px
+      gap:6%;
+      padding-left: 10px;
+      margin: 0;
     }
     .nav-lane{
         display: none;
@@ -82,7 +93,7 @@ a:hover {
       display: none;
     } 
     .logo-image{
-      padding-left: 50px;
+      padding-left: 20px;
     }
     a{
       font-size: 14px;
@@ -91,12 +102,12 @@ a:hover {
   
 
   /* MOBILE VIEW */
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
     .navbar{
         display: flex;
         width: 100%;
-        justify-content: center;
-        gap: 70%;
+        justify-content: space-around;
+        gap: 50%;
         padding: 0;
         margin: 26px 0 0 0;
     }
@@ -117,12 +128,12 @@ a:hover {
       right: 0;
       list-style: none;
       transition: all 0.5s ease-in-out;
-       width: 60%;
-       height: 100vh;
-       background-color:#ffffff16;
-       backdrop-filter: blur(10px);
-       padding: 100px 0 0 20px ;
-       margin-top: -30px ;
+      width: 60%;
+      height: 100vh;
+      background-color:#ffffff16;
+      backdrop-filter: blur(10px);
+      padding: 100px 0 0 20px ;
+      margin-top: -30px ;
     }
     ul li {
       width: 100%;
