@@ -1,9 +1,8 @@
 .home-container{
     background-image: url(../../assets/home/background-home-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
+    width: auto;
     height: 100vh;
 }
 
@@ -13,13 +12,13 @@
     align-items: center;
     flex-direction: row;
     gap:30%;
-    margin-top: 300px;
+    margin-top: 400px;
 }
 .main-info{
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 490px;
+    width: 28%;
 }
 .intro{
     text-transform: uppercase;
@@ -62,6 +61,23 @@
     transition:   box-shadow 687ms ease-out;
     box-shadow: #7070736e 0px 0px 2px 76px;
 }
+/* responsive */
+@media(max-width:1377px){
+    .space-info-container{
+        gap: 10%;
+    }
+    .main-info{
+        width: 444px;
+    }
+    .space{
+        font-size: 130px;
+    }
+    .explore-btn{
+        width:242px;
+        height: 242px;
+    }
+}
+
 /* TABLET VIEW */
 @media (max-width: 768px) {
     .home-container{
