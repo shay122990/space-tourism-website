@@ -19,3 +19,14 @@
   @media (max-width: 768px) {
 
   }
+
+  .technology-image {
+    max-width: 100%;
+  }
+  
+  /* @media (max-width: 600px) {
+    .technology-image {
+      content: url(${selectedTechnology.images.portrait});
+    }
+  } */
+  
