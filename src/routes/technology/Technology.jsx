@@ -26,7 +26,7 @@ const Technology = () => {
               }
               onClick={() => handleTabChange(technology)}
             >
-              {technology.name}
+              {technology.id + 1}
             </button>
           ))}
         </div>

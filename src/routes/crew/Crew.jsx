@@ -24,7 +24,7 @@ const Crew = () => {
               }
               onClick={() => handleTabChange(crewMember)}
             >
-              {crewMember.name}
+              <span>.</span>
             </button>
           ))}
         </div>
