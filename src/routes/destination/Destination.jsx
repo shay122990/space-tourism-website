@@ -14,28 +14,48 @@ const Destination = () => {
   return (
     <div className="destination-container">
       <div className="destinations-info-container">
-        <p>
-          <span>01</span> Pick your destination
-        </p>
-        <div className="destination-tab-buttons">
-          {destinationsData.map((destination) => (
-            <button
-              key={destination.id}
-              className={
-                selectedDestination.id === destination.id ? "active" : ""
-              }
-              onClick={() => handleTabChange(destination)}
-            >
-              {destination.name}
-            </button>
-          ))}
-        </div>
-        <div className="destination-content">
-          <h2>{selectedDestination.name}</h2>
-          <p>{selectedDestination.description}</p>
-          <img src={selectedDestination.image} alt={selectedDestination.name} />
-          <p>{selectedDestination.distance}</p>
-          <p>{selectedDestination.travel}</p>
+        <span className="pick-your-destination">
+          <strong>01</strong> Pick your destination
+        </span>
+        <div className="destination-content-container">
+          <div className="planet-container">
+            <img
+              src={selectedDestination.image}
+              alt={selectedDestination.name}
+            />
+          </div>
+          <div className="destination-content">
+            <div className="destination-tab-buttons">
+              <ul>
+                {destinationsData.map((destination) => (
+                  <li
+                    key={destination.id}
+                    className={
+                      selectedDestination.id === destination.id ? "active" : ""
+                    }
+                    onClick={() => handleTabChange(destination)}
+                  >
+                    {destination.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <h1>{selectedDestination.name}</h1>
+            <p className="planet-description">
+              {selectedDestination.description}
+            </p>
+            <hr />
+            <div className="distance-travel-container">
+              <div>
+                <span>Avg. Distance</span>
+                <h3>{selectedDestination.distance}</h3>
+              </div>
+              <div>
+                <span>Est. Travel Time</span>
+                <h3>{selectedDestination.travel}</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

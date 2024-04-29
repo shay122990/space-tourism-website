@@ -12,10 +12,10 @@
   overflow: hidden;
   text-align: center;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h4,h6{
   font-family: "Bellefair", serif;
 }
-span,li{
+span,ul,li{
 font-family:"Barlow Condensed", sans-serif ;
 text-transform: uppercase;
 list-style-type: none;
