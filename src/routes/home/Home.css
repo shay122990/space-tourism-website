@@ -79,7 +79,7 @@
 }
 
 /* TABLET VIEW */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .home-container{
         background-image: url(../../assets/home/background-home-tablet.jpg);
     }
@@ -111,8 +111,31 @@
 }
 
   /* MOBILE VIEW */
-  @media (max-width: 375px) {
+  @media (max-width: 500px) {
     .home-container{
         background-image: url(../../assets/home/background-home-mobile.jpg);
+    }
+    .main-info{
+        flex-direction: column;
+        gap: 0;
+        height: 276px;
+        width: 327px;
+    }
+    .space{
+        font-size:80px;
+    }
+    .explore-btn{
+        width:150px;
+        height: 150px;
+        font-size: 20px;
+    }
+    .explore-btn-container:hover{
+        box-shadow: #7070736e 0px 0px 2px 56px;
+    }
+    .intro{
+        font-size: 20px;
+    }
+    .space-info{
+        font-size: 16px;
     }
   }

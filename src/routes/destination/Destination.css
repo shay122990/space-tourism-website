@@ -64,6 +64,7 @@
   text-decoration: underline;
   text-underline-offset: 18px;
   text-decoration-thickness: 2px;
+  color: var(--text-color-main);
 }
 h1 {
   font-size: 100px;
