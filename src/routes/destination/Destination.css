@@ -65,6 +65,11 @@
   text-decoration-thickness: 2px;
 }
 
+.destination-tab-buttons a:active{
+  text-decoration: underline;
+  text-underline-offset: 18px;
+  text-decoration-thickness: 2px;
+}
 h1 {
   font-size: 100px;
   text-transform: uppercase;

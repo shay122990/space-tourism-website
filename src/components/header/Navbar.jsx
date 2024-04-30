@@ -1,37 +1,49 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import './Navbar.css'
-import logoImg from '../../assets/shared/logo.svg'
-import IconClose from '../../assets/shared/icon-close.svg';
-import IconMenu from '../../assets/shared/icon-hamburger.svg';
-
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+import logoImg from "../../assets/shared/logo.svg";
+import IconClose from "../../assets/shared/icon-close.svg";
+import IconMenu from "../../assets/shared/icon-hamburger.svg";
 
 const Navbar = () => {
-  const [mobile, setMobile] = useState(false)
+  const [mobile, setMobile] = useState(false);
   return (
     <nav className="navbar">
-      <img className="logo-image" src={logoImg} alt="logo-image"/>
-      <hr className="nav-lane"/>
-      <ul className={mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
+      <img className="logo-image" src={logoImg} alt="logo-image" />
+      <hr className="nav-lane" />
+      <ul
+        className={mobile ? "nav-links-mobile" : "nav-links"}
+        onClick={() => setMobile(false)}
+      >
         <li>
-          <Link to='/'><strong>00 </strong> Home</Link>
+          <NavLink to="/" className="nav-link">
+            <strong>00 </strong> Home
+          </NavLink>
         </li>
         <li>
-          <Link to='/destination'><strong>01 </strong> Destination</Link>
+          <NavLink to="/destination" className="nav-link">
+            <strong>01 </strong> Destination
+          </NavLink>
         </li>
         <li>
-          <Link to='/crew'><strong>02 </strong> Crew</Link>
+          <NavLink to="/crew" className="nav-link">
+            <strong>02 </strong> Crew
+          </NavLink>
         </li>
         <li>
-          <Link to='/technology'><strong>03 </strong> Technology</Link>
+          <NavLink to="/technology" className="nav-link">
+            <strong>03 </strong> Technology
+          </NavLink>
         </li>
       </ul>
-      <button className='mobile-menu-icon' onClick={() => setMobile(!mobile)}>
-         {mobile ? <img src={IconClose} alt="Close Menu" /> : <img src={IconMenu} alt="Open Menu" />}
+      <button className="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
+        {mobile ? (
+          <img src={IconClose} alt="Close Menu" />
+        ) : (
+          <img src={IconMenu} alt="Open Menu" />
+        )}
       </button>
-
     </nav>
-
   );
 };
 
