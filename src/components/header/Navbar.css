@@ -87,13 +87,13 @@
     }
     .nav-link:hover,
     .nav-link.active {
-      text-underline-offset: 12px; 
-      text-decoration-thickness: 2px;
+      text-underline-offset: 36px; 
+      text-decoration-thickness: 3px;
     }
     .nav-lane{
         display: none;
     }
-    strong{
+    .nav-link strong{
         display: none;
     }
     .mobile-menu-icon {
@@ -101,9 +101,6 @@
     } 
     .logo-image{
       padding-left: 20px;
-    }
-    a{
-      font-size: 14px;
     }
   }
   
@@ -114,9 +111,9 @@
         display: flex;
         width: 100%;
         justify-content: space-around;
-        gap: 50%;
+        gap: 55%;
         padding: 0;
-        margin: 26px 0 0 0;
+        margin: 22px 0 0 0;
     }
     .nav-links {
       display: none;
@@ -128,6 +125,7 @@
     .logo-image{
       width: 40px;
       height:40px;
+      padding-left: 0;
     }
     .nav-links-mobile {
       position:absolute;
@@ -141,6 +139,11 @@
       backdrop-filter: blur(10px);
       padding: 100px 0 0 20px ;
       margin-top: -30px ;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      text-underline-offset: 8px; 
+      text-decoration-thickness: 3px;
     }
     ul li {
       width: 100%;

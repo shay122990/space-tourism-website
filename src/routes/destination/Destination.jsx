@@ -12,19 +12,19 @@ const Destination = () => {
   };
 
   return (
-    <div className="destination-container">
-      <div className="destinations-info-container">
+    <div className="destination-home-container">
+      <div className="destinations-content-container">
         <span className="pick-your-destination">
           <strong>01</strong> Pick your destination
         </span>
-        <div className="destination-content-container">
+        <div className="destination-planets-container">
           <div className="planet-container">
             <img
               src={selectedDestination.image}
               alt={selectedDestination.name}
             />
           </div>
-          <div className="destination-content">
+          <div className="destination-info">
             <div className="destination-tab-buttons">
               <ul>
                 {destinationsData.map((destination) => (
@@ -40,11 +40,11 @@ const Destination = () => {
                 ))}
               </ul>
             </div>
-            <h1>{selectedDestination.name}</h1>
+            <h1 className="destination-name">{selectedDestination.name}</h1>
             <p className="planet-description">
               {selectedDestination.description}
             </p>
-            <hr />
+            <hr className="planet-lane" />
             <div className="distance-travel-container">
               <div>
                 <span>Avg. Distance</span>

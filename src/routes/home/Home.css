@@ -115,14 +115,25 @@
     .home-container{
         background-image: url(../../assets/home/background-home-mobile.jpg);
     }
+    .space-info-container{
+        margin-top: 120px;
+    }
     .main-info{
         flex-direction: column;
         gap: 0;
         height: 276px;
-        width: 327px;
+        width: auto;
+        padding: 0 10px;
+    }
+    .intro{
+        font-size: 16px;
     }
     .space{
         font-size:80px;
+    }
+    .space-info{
+        font-size: 16px;
+        line-height: 25px;
     }
     .explore-btn{
         width:150px;
@@ -131,11 +142,5 @@
     }
     .explore-btn-container:hover{
         box-shadow: #7070736e 0px 0px 2px 56px;
-    }
-    .intro{
-        font-size: 20px;
-    }
-    .space-info{
-        font-size: 16px;
     }
   }

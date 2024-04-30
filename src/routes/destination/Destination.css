@@ -1,5 +1,5 @@
 /* General Styles */
-.destination-container {
+.destination-home-container {
   background-image: url(../../assets/destination/background-destination-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.destinations-info-container {
+.destinations-content-container {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -26,7 +26,7 @@
 .pick-your-destination strong {
   opacity: 0.4;
 }
-.destination-content-container {
+.destination-planets-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,8 +34,11 @@
   align-items: center;
   width: 100%;
 }
-  
-.destination-content {
+.planet-container img{
+  width:445px;
+  height:445px;
+}
+.destination-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -66,7 +69,7 @@
   text-decoration-thickness: 2px;
   color: var(--text-color-main);
 }
-h1 {
+.destination-name{
   font-size: 100px;
   text-transform: uppercase;
   padding: 0;
@@ -82,7 +85,7 @@ h1 {
   padding-bottom: 40px;
 }
 
-hr {
+.planet-lane{
   width: 100%;
   height: 1px;
   border: 0 solid;
@@ -116,33 +119,127 @@ hr {
 }
 
 /* Media Queries */
+/* responsive */
+@media (min-width: 1000px) and (max-width:1280px) {
+  .destinations-content-container{
+    margin-top: 20px;
+  }
+}
 /* TABLET */
-@media (max-width: 768px) {
-  .destination-container{
+@media (max-width: 1000px) {
+  .destination-home-container{
     background-image: url(../../assets/destination/background-destination-tablet.jpg);
   }
-  .destinations-info-container {
-    margin-top: 100px;
-    padding: 0;
+  .destinations-content-container{
+    margin-top: 0;
+    padding: 120px 20px 0 20px;
+    /* height: 100vh; */
   }
-  .destination-content-container{
-    flex-direction: column;
-    gap:0;
-   
-  }
-  .pick-your-destination {
+  .pick-your-destination{
+    padding: 20px 0 50px 0;
     font-size: 20px;
-    letter-spacing: 4.72px;
-    padding: 0;
   }
-  
-  .pick-your-destination strong {
-    opacity: 0.4;
+  .destination-planets-container{
+    gap:0;
+    flex-direction: column;
+  }
+  .planet-container img{
+    width: 300px;
+    height:300px;
+  }
+  .destination-info{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    height: auto;
+    gap: 20px;
+  }
+  .destination-tab-buttons{
+    width: 285px;
+    margin-top: 20px;
+  }
+  .destination-name{
+    font-size: 80px;
+  }
+  .planet-description{
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    padding: 0 0 20px 0;
+    height: auto;
+  }
+  .distance-travel-container{
+    justify-content: center;
+  }
+  .planet-lane{
+    width: 80%;
   }
 }
 /* MOBILE */
-@media (max-width: 375px) {
-  .destination-container{
+@media (max-width: 500px){
+  .destination-home-container{
     background-image: url(../../assets/destination/background-destination-mobile.jpg);
   }
+  .destinations-content-container{
+    margin-top: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .pick-your-destination{
+    padding: 240px 0 0 0;
+    font-size: 16px;
+  }
+  .destination-planets-container{
+   margin-top: 40px;
+   /* height: auto; */
+  }
+  .planet-container img{
+    width: 170px;
+    height:170px;
+  }
+  .destination-info{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .destination-tab-buttons{
+    font-size: 14px;
+    padding-top: 12px;
+    margin: 0;
+  }
+  .destination-tab-buttons ul{
+    font-size: 14px;
+    gap: 16px;
+  }
+  .destination-tab-buttons li:hover,
+  .destination-tab-buttons li.active {
+    text-underline-offset: 10px;
+}
+  .destination-name{
+    font-size: 56px;
+  }
+  .planet-description{
+    text-align: center;
+    width: 90%;
+    line-height: 25px;
+    font-size: 15px;
+    padding: 0 0 20px 0;
+    height: 125px;
+  }
+  .planet-lane{
+    width: 90%;
+  }
+  .distance-travel-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
 }
