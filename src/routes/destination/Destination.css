@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 2160px;
   overflow: hidden;
 }
 
@@ -13,16 +13,9 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  justify-content: center;
   align-items: start;
-  padding: 120px 0 0 0;
 }
-
-.pick-your-destination {
-  font-size: 28px;
-  letter-spacing: 4.72px;
-  /* padding: 0 0 5% 14%; */
-}
-
 .pick-your-destination strong {
   opacity: 0.4;
 }
@@ -35,14 +28,21 @@
   width: 100%;
 }
 .planet-container{
-  border: solid 1px red;
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
+  align-items: flex-start;
+  gap: 60px;
+  height: 100vh; 
+}
+.pick-your-destination {
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  padding-top: 100px;
 }
 .planet-container img{
   width:445px;
   height:445px;
+  padding-left: 100px;
 }
 .destination-info {
   display: flex;
@@ -128,7 +128,10 @@
 /* responsive */
 @media (min-width: 1000px) and (max-width:1280px) {
   .destinations-content-container{
-    margin-top: 20px;
+    padding: 0 30px;
+  }
+  .destination-planets-container{
+    gap:8%;
   }
 }
 /* TABLET */
@@ -138,21 +141,29 @@
   }
   .destinations-content-container{
     margin-top: 0;
-    padding: 120px 20px 0 20px;
-    /* height: 100vh; */
+    /* padding: 10px 20px 0 20px;  */
+    height: 1024px; 
+  }
+
+  .planet-container{
+    height: auto;
+    align-items: center;
+    gap: 30px;
   }
   .pick-your-destination{
-    padding: 20px 0 50px 0;
+    /* padding: 60px 0 0 0; */
     font-size: 20px;
+  }
+  .planet-container img{
+    width: 300px;
+    height:300px;
+    padding: 0;
   }
   .destination-planets-container{
     gap:0;
     flex-direction: column;
   }
-  .planet-container img{
-    width: 300px;
-    height:300px;
-  }
+ 
   .destination-info{
     width: 100%;
     justify-content: center;
@@ -189,13 +200,18 @@
   }
   .destinations-content-container{
     margin-top: 0;
-    height: 100vh;
+    height: 720px;
     justify-content: center;
     align-items: center;
     padding: 0;
   }
+  .planet-container{
+    height: auto;
+    align-items: center;
+    gap: 18px;
+  }
   .pick-your-destination{
-    padding: 240px 0 0 0;
+    padding-top: 120px;
     font-size: 16px;
   }
   .destination-planets-container{
@@ -214,7 +230,7 @@
   }
   .destination-tab-buttons{
     font-size: 14px;
-    padding-top: 12px;
+    padding-top: 20px;
     margin: 0;
   }
   .destination-tab-buttons ul{
