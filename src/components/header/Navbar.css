@@ -50,11 +50,16 @@
     text-decoration: none;
   }
   
-  .nav-link:hover,
-  .nav-link.active {
-    text-decoration: underline;
+  .nav-link:hover {
+    text-decoration: underline var(--hover-color);
     text-underline-offset: 38px; 
     text-decoration-thickness: 4px;
+  }
+  .nav-link.active{
+     text-decoration: underline var(--text-color-main);
+     text-underline-offset: 38px; 
+     text-decoration-thickness: 4px;
+ 
   }
   
   .mobile-menu-icon {

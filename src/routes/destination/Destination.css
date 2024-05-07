@@ -67,12 +67,16 @@
   cursor: pointer;
 }
 
-.destination-tab-buttons li:hover,
-.destination-tab-buttons li.active {
-  text-decoration: underline;
+.destination-tab-buttons li:hover {
+  text-decoration: underline var(--hover-color);
   text-underline-offset: 18px;
   text-decoration-thickness: 2px;
-  color: var(--text-color-main);
+
+}
+.destination-tab-buttons li.active{
+  text-decoration: underline var(--text-color-main);
+  text-underline-offset: 18px;
+  text-decoration-thickness: 2px;
 }
 .destination-name{
   font-size: 100px;

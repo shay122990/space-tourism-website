@@ -9,6 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   --text-color-one: #D0D6F9;
   --text-color-main: #FFFFFF;
+  --hover-color:#979797;
   overflow: hidden;
   text-align: center;
 }
