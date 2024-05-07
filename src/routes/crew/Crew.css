@@ -68,10 +68,25 @@
     height:15px;
     border-radius: 50%;
     border:none;
+    background-color: #97979757;
+    cursor: pointer;
 }
-.crew-tab-menu button:hover,.active{
-    color: var(--text-color-main);
-}
+ 
+.crew-tab-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+    
+  .crew-tab-menu button:hover
+  {
+    background-color: #979797;
+    cursor: pointer;
+  }
+  .crew-tab-menu button.active{
+    background-color: var(--text-color-one);
+  }
+  
 
 .crew-image img{
     width: 625px;

@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10%;
-  /* height: 100vh;  */
+  height: 100vh; 
 }
 .pick-your-destination {
   font-size: 28px;
