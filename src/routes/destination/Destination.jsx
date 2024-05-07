@@ -14,11 +14,11 @@ const Destination = () => {
   return (
     <div className="destination-home-container">
       <div className="destinations-content-container">
-        <span className="pick-your-destination">
-          <strong>01</strong> Pick your destination
-        </span>
         <div className="destination-planets-container">
           <div className="planet-container">
+            <span className="pick-your-destination">
+              <strong>01</strong> Pick your destination
+            </span>
             <img
               src={selectedDestination.image}
               alt={selectedDestination.name}

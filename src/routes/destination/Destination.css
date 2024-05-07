@@ -20,7 +20,7 @@
 .pick-your-destination {
   font-size: 28px;
   letter-spacing: 4.72px;
-  padding: 0 0 5% 14%;
+  /* padding: 0 0 5% 14%; */
 }
 
 .pick-your-destination strong {
@@ -33,6 +33,12 @@
   gap: 12%;
   align-items: center;
   width: 100%;
+}
+.planet-container{
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
 }
 .planet-container img{
   width:445px;
