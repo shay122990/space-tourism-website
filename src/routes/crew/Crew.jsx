@@ -17,19 +17,21 @@ const Crew = () => {
             <span className="meet-your-crew">
               <strong>02</strong> Meet your crew
             </span>
-            <h2 className="crew-role">{selectedCrewMember.role}</h2>
-            <h3 className="crew-name">{selectedCrewMember.name}</h3>
-            <p className="crew-bio">{selectedCrewMember.bio}</p>
-            <div className="crew-tab-menu">
-              {crewData.map((crewMember) => (
-                <button
-                  key={crewMember.id}
-                  className={
-                    selectedCrewMember.id === crewMember.id ? "active" : ""
-                  }
-                  onClick={() => handleTabChange(crewMember)}
-                ></button>
-              ))}
+            <div className="crew-details">
+              <h2 className="crew-role">{selectedCrewMember.role}</h2>
+              <h3 className="crew-name">{selectedCrewMember.name}</h3>
+              <p className="crew-bio">{selectedCrewMember.bio}</p>
+              <div className="crew-tab-menu">
+                {crewData.map((crewMember) => (
+                  <button
+                    key={crewMember.id}
+                    className={
+                      selectedCrewMember.id === crewMember.id ? "active" : ""
+                    }
+                    onClick={() => handleTabChange(crewMember)}
+                  ></button>
+                ))}
+              </div>
             </div>
           </div>
           <div className="crew-image">

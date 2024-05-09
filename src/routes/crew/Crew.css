@@ -4,22 +4,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height:2160px;
+    height: 100vh;
 }
 .crew-content-container{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-top: 100px;
-    width: 100%;
-    padding: 120px 0 0 0;
+    padding: 160px 0 0 0;
 }
 .meet-your-crew{
     font-size: 28px;
     letter-spacing: 4.72px;
     justify-content: flex-start;
-    padding-bottom: 170px;
+    padding-bottom: 100px;
 }
 .meet-your-crew strong{
     opacity: 0.4;
@@ -28,15 +27,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    /* padding:0 9%; */
 }
 .crew-info{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 40%;
-    height: 712px;
+    width: 50%;
+    padding-left: 11%;
 }
 .crew-role{
     font-size: 32px;
@@ -47,12 +46,13 @@
     font-size: 56px;
     margin: 0;
     text-transform: uppercase;
+    padding-bottom: 30px;
 }
 .crew-bio{
     font-size: 18px;
     line-height: 32px;
     color: var(--text-color-one);
-    width: 60%;
+    width: 72%;
     height: 200px;
 }
 .crew-tab-menu {
@@ -71,26 +71,26 @@
     background-color: #97979757;
     cursor: pointer;
 }
- 
 .crew-tab-menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-    
-  .crew-tab-menu button:hover
+  }   
+.crew-tab-menu button:hover
   {
     background-color: var(--hover-color);
     cursor: pointer;
   }
-  .crew-tab-menu button.active{
+.crew-tab-menu button.active{
     background-color: var(--text-color-one);
   }
-  
-
+.crew-image{
+    width: 50%;
+    padding-right: 180px;
+  }
 .crew-image img{
-    width: 625px;
-    height: 745px;
+    height: 720px;
+    padding-top: 10px;
 }
 /* @media (min-width: 1000px) and (max-width:1280px) {
    
@@ -99,10 +99,64 @@
 @media (max-width: 1000px) {
     .crew-home-container{
         background-image: url(../../assets/crew/background-crew-tablet.jpg);
-        height: 1024px;
     }
     .crew-content-container{
-        height: 1024px; 
+        margin: 0;
+        padding: 0;
+    }
+    .crew-content{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .crew-info{
+        width:100%;
+        justify-content: flex-start;
+        padding: 60px 0 0 0;
+    }
+    .meet-your-crew{
+        font-size: 20px;
+        padding: 50px 0 20px 20px;
+    }
+    .crew-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .crew-role{
+        font-size: 24px;
+      
+    }
+    .crew-name{
+       font-size: 40px;
+       padding: 0;
+    }
+    .crew-bio{
+        font-size: 16px;
+        height: 134px;
+    }
+    .crew-tab-menu{
+        position: relative;
+        width: 88px;
+        height: 10px;
+    }
+    .crew-tab-menu button{
+        width: 10px;
+        height: 10px;
+    }
+    .crew-image{
+        /* margin-bottom: -2px; */
+        padding: 50px 0 0 0;
+        width: 100%;
+    }
+    .crew-image img{
+        width: 340px;
+        height: 400px;
+        padding: 0;
     }
 }
 
