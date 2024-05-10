@@ -16,9 +16,9 @@ const Destination = () => {
       <div className="destinations-content-container">
         <div className="destination-planets-container">
           <div className="planet-container">
-            <span className="pick-your-destination">
+            <h1 className="pick-your-destination">
               <strong>01</strong> Pick your destination
-            </span>
+            </h1>
             <img
               src={selectedDestination.image}
               alt={selectedDestination.name}
@@ -26,21 +26,30 @@ const Destination = () => {
           </div>
           <div className="destination-info">
             <div className="destination-tab-buttons">
-              <ul>
+              <ul role="tablist">
                 {destinationsData.map((destination) => (
                   <li
                     key={destination.id}
+                    role="tab"
+                    tabIndex={0}
                     className={
                       selectedDestination.id === destination.id ? "active" : ""
                     }
                     onClick={() => handleTabChange(destination)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        handleTabChange(destination);
+                      }
+                    }}
+                    aria-selected={selectedDestination.id === destination.id}
+                    aria-controls={destination.id}
                   >
                     {destination.name}
                   </li>
                 ))}
               </ul>
             </div>
-            <h1 className="destination-name">{selectedDestination.name}</h1>
+            <h2 className="destination-name">{selectedDestination.name}</h2>
             <p className="planet-description">
               {selectedDestination.description}
             </p>

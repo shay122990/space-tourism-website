@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="space-info-container">
-        <div className="main-info">
+        <main className="main-info">
           <p className="intro">So, you want to travel to</p>
           <h1 className="space"> Space</h1>
           <p className="space-info">
@@ -13,7 +13,7 @@ const Home = () => {
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
           </p>
-        </div>
+        </main>
         <div className="explore-btn-container">
           <Link to="/destination">
             <button className="explore-btn">Explore</button>

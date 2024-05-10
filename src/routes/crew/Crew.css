@@ -1,41 +1,48 @@
-.crew-home-container{
+.crew-home-page{
     background-image: url(../../assets/crew/background-crew-desktop.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
-.crew-content-container{
+.main-container{
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 100px;
-    padding: 160px 0 0 0;
+    padding: 0 20px;
+   
 }
 .meet-your-crew{
+    border: 1px solid lightcoral;
     font-size: 28px;
     letter-spacing: 4.72px;
-    justify-content: flex-start;
-    padding-bottom: 100px;
+    padding: 100px 0 0 11%;
 }
 .meet-your-crew strong{
     opacity: 0.4;
 }
 .crew-content{
+    border: solid 1px pink;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* padding:0 9%; */
+    align-items: center;
+    width: 100%;
+    height: 700px;
 }
-.crew-info{
+.crew-details{
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: 50%;
-    padding-left: 11%;
+    text-align: start;
+}
+.crew-info{
+    border: 1px solid blue;
+    width: 714px;
 }
 .crew-role{
     font-size: 32px;
@@ -55,13 +62,16 @@
     width: 72%;
     height: 200px;
 }
-.crew-tab-menu {
+.crew-tab-menu{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
     width:132px;
     height: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 .crew-tab-menu button{
     width:15px;
@@ -71,11 +81,6 @@
     background-color: #97979757;
     cursor: pointer;
 }
-.crew-tab-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }   
 .crew-tab-menu button:hover
   {
     background-color: var(--hover-color);
@@ -85,51 +90,39 @@
     background-color: var(--text-color-one);
   }
 .crew-image{
-    width: 50%;
-    padding-right: 180px;
-  }
-.crew-image img{
-    height: 720px;
-    padding-top: 10px;
+    border: 1px solid yellow;
+    width: 600px;
 }
-/* @media (min-width: 1000px) and (max-width:1280px) {
-   
-  } */
-/* TABLET VIEW */
-@media (max-width: 1000px) {
-    .crew-home-container{
-        background-image: url(../../assets/crew/background-crew-tablet.jpg);
+.crew-image img{
+   height: 700px;
+}
+
+@media (max-width: 1000px){
+    .crew-home-page{
+        background-image: url(../../assets//crew/background-crew-tablet.jpg);
     }
-    .crew-content-container{
-        margin: 0;
-        padding: 0;
-    }
-    .crew-content{
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        margin: 0;
-    }
-    .crew-info{
-        width:100%;
-        justify-content: flex-start;
-        padding: 60px 0 0 0;
+    .main-container{
+        height: 100dvh;
+        margin-top: 0;
     }
     .meet-your-crew{
         font-size: 20px;
-        padding: 50px 0 20px 20px;
+        padding: 10px 0 0 0;
+    }
+    .crew-content{
+        flex-direction: column;
+        height: auto;
     }
     .crew-details{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        align-items: center;
+    }
+    .crew-info{
+        padding: 50px 0;
+
     }
     .crew-role{
         font-size: 24px;
-      
     }
     .crew-name{
        font-size: 40px;
@@ -138,6 +131,7 @@
     .crew-bio{
         font-size: 16px;
         height: 134px;
+        width: 100%;
     }
     .crew-tab-menu{
         position: relative;
@@ -149,24 +143,21 @@
         height: 10px;
     }
     .crew-image{
-        /* margin-bottom: -2px; */
-        padding: 50px 0 0 0;
         width: 100%;
+        
     }
     .crew-image img{
-        width: 340px;
         height: 400px;
-        padding: 0;
     }
 }
-
-  /* MOBILE VIEW */
-  @media (max-width: 500px) {
-    .crew-home-container{
+@media (max-width:500px) {
+    .crew-home-page{
         background-image: url(../../assets/crew/background-crew-mobile.jpg);
-        height: 720px;
     }
-    .crew-content-container{
-        height: 720px; 
+    .crew-content{
+        flex-direction: column-reverse;
     }
-  }
+    .crew-details{
+        flex-direction: column-reverse;
+    }
+}

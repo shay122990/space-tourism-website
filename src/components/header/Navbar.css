@@ -28,16 +28,15 @@
   letter-spacing: 2px;
   text-decoration: none;
 }
-
   .nav-links {
-    display: flex;
+   display: flex;
     background-color:#ffffff16;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     gap: 8%;
     padding-right: 150px;
     height:96px;
@@ -49,7 +48,6 @@
     letter-spacing: 2px;
     text-decoration: none;
   }
-  
   .nav-link:hover {
     text-decoration: underline var(--hover-color);
     text-underline-offset: 38px; 
@@ -59,7 +57,6 @@
      text-decoration: underline var(--text-color-main);
      text-underline-offset: 38px; 
      text-decoration-thickness: 4px;
- 
   }
   
   .mobile-menu-icon {

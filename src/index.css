@@ -1,3 +1,6 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
 :root {
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
@@ -10,16 +13,17 @@
   --text-color-one: #D0D6F9;
   --text-color-main: #FFFFFF;
   --hover-color:#979797;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
 }
-h1,h2,h3,h4,h4,h6{
+h2,h3,h4,h4,h6{
   font-family: "Bellefair", serif;
 }
-span,ul,li{
+h1,span,ul,li{
 font-family:"Barlow Condensed", sans-serif ;
 text-transform: uppercase;
 list-style-type: none;
+font-weight: 400;
 }
 p{
   font-family: "Barlow", sans-serif ;
@@ -30,6 +34,8 @@ a {
 }
 
 body {
+  background-size: cover;
+  background-position: bottom center;
   margin: 0;
   padding: 0;
 }

@@ -33,6 +33,7 @@
     font-weight: 400;
 } 
 .space{
+    font-family: 'Bellefair',sans-serif;
     font-size: 150px;
     color: var(--text-color-main);
     text-transform: uppercase;
