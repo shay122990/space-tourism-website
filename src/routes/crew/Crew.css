@@ -6,19 +6,18 @@
     width: 100%;
     height: 100vh;
 }
-.main-container{
+.main-crew-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-top: 100px;
-    padding: 0 20px;
-   
+    padding: 0 0 0 12%;
 }
 .meet-your-crew{
     font-size: 28px;
     letter-spacing: 4.72px;
-    padding: 100px 0 0 11%;
+    padding-top: 100px;
 }
 .meet-your-crew strong{
     opacity: 0.4;
@@ -26,11 +25,8 @@
 .crew-content{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 700px;
-    padding: 0 9%;
 }
 .crew-details{
     display: flex;
@@ -95,14 +91,20 @@
 @media (max-width: 1000px){
     .crew-home-page{
         background-image: url(../../assets//crew/background-crew-tablet.jpg);
+        align-items: center;
+        justify-content: center;
     }
-    .main-container{
+    .main-crew-container{
         margin-top: 0;
+        padding: 0;
+        height: 1024px; 
+        justify-content: center;
+        width: 100%;
     }
     .meet-your-crew{
         font-size: 20px;
-        margin-top: 120px;
-        padding: 0;
+        margin-top: 80px;
+        padding: 20px 0 0 3%;
         letter-spacing: 3.38px;
     }
     .crew-content{
@@ -111,7 +113,6 @@
        align-items: center;
        text-align: center;
        justify-content: flex-start;
-       height: 100vh;
        margin-top: 30px;
     }
     .crew-details{
@@ -135,18 +136,16 @@
     .crew-bio{
         font-size: 16px;
         width: 458px;
-        padding-bottom: 20px;  
+        padding: 0;
     }
     .crew-tab-menu{
         position: relative;
-        width: 88px;
         height: 20px;
         gap: 16px;
     }
     .crew-tab-menu button{
         width: 10px;
-        height: 10px;
-        
+        height: 10px;  
     }
     .crew-image{
         width: 100%;
@@ -160,18 +159,20 @@
     .crew-home-page{
         background-image: url(../../assets/crew/background-crew-mobile.jpg);
     }
-    .main-container{
-        align-items: center;
+    .main-crew-container{
+        display: block;
+       align-items: center;
+       padding: 0 20px;
     }
     .meet-your-crew{
-        margin: 80px 0 20px 0;
+        margin: 60px 0 0 0;
         font-size: 16px;
         letter-spacing: 2.7px;
     }
     .crew-content{
         flex-direction: column-reverse;
         justify-content: flex-end;
-
+        
     }
     .crew-details{
         flex-direction: column-reverse;

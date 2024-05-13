@@ -11,7 +11,7 @@ const Crew = () => {
 
   return (
     <div className="crew-home-page">
-      <main className="main-container">
+      <main className="main-crew-container">
         <h1 className="meet-your-crew">
           <strong>02</strong> Meet your crew
         </h1>
