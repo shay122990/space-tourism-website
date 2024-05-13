@@ -19,10 +19,12 @@ const Destination = () => {
             <h1 className="pick-your-destination">
               <strong>01</strong> Pick your destination
             </h1>
-            <img
-              src={selectedDestination.image}
-              alt={selectedDestination.name}
-            />
+            <div className="destination-image">
+              <img
+                src={selectedDestination.image}
+                alt={selectedDestination.name}
+              />
+            </div>
           </div>
           <div className="destination-info">
             <div className="destination-tab-buttons">

@@ -1,69 +1,57 @@
 /* General Styles */
 .destination-home-container {
   background-image: url(../../assets/destination/background-destination-desktop.jpg);
-  background-position: center;
+  background-position: center ;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
-  /* display: flex;
-  align-items: center; */
 }
 .destinations-content-container {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
   justify-content: center;
-  align-items: start;
-}
-.pick-your-destination{
-  text-transform: uppercase;
-  font-size: 28px;
-  letter-spacing: 4.72px;
-  padding-top: 100px;
-}
-.pick-your-destination strong {
-  opacity: 0.4;
+  align-items: flex-start;
+  padding: 0 0 0 12%;
 }
 .destination-planets-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 12%;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
+  gap: 8%;
 }
 .planet-container{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10%;
-  height: 100vh; 
+}
+.pick-your-destination{
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  padding: 100px 0;
+}
+.pick-your-destination strong {
+  opacity: 0.4;
 }
 .planet-container img{
-  width:100%;
-  height:445px;
   padding-left: 100px;
 }
 .destination-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 445px;
-  height: 472px;
-  gap: 10px;
 }
-
 .destination-tab-buttons ul {
   display: flex;
   font-size: 16px;
   flex-direction: row;
   gap: 36px;
   letter-spacing: 2.7px;
-  padding: 0;
+  padding: 20px 0 20px 0;
   color: var(--text-color-one);
 }
-
 .destination-tab-buttons {
   display: inline-block;
   cursor: pointer;
@@ -86,8 +74,8 @@
   padding: 0;
   margin: 0;
 }
-
 .planet-description {
+  width: 444px;
   text-align: left;
   line-height: 32px;
   font-size: 18px;
@@ -95,14 +83,12 @@
   margin: 0;
   padding-bottom: 40px;
 }
-
 .planet-lane{
   width: 100%;
   height: 1px;
   border: 0 solid;
-  background-color: #ffffff34;
+  background-color: #ffffff34; 
 }
-
 .distance-travel-container {
   width: 100%;
   display: flex;
@@ -112,7 +98,6 @@
   text-align: left;
   padding-top: 10px;
 }
-
 .distance-travel-container span {
   font-size: 14px;
   font-weight: 400;
@@ -120,7 +105,6 @@
   color: var(--text-color-one);
   letter-spacing: 2.36px;
 }
-
 .distance-travel-container h3 {
   font-weight: 400;
   font-size: 28px;
@@ -132,11 +116,14 @@
 /* Media Queries */
 /* responsive */
 @media (min-width: 1000px) and (max-width:1280px) {
-  .destinations-content-container{
-    padding: 0 30px;
+  .planet-container img{
+    padding-left: 0;
   }
   .destination-planets-container{
-    gap:8%;
+    gap: 3%;
+  }
+  .planet-description{
+    width: 80%;
   }
 }
 /* TABLET */
@@ -145,30 +132,31 @@
     background-image: url(../../assets/destination/background-destination-tablet.jpg);
   }
   .destinations-content-container{
-    margin-top: 0;
-    /* padding: 10px 20px 0 20px;  */
-    height: 1024px; 
-  }
-
-  .planet-container{
-    height: auto;
-    align-items: center;
-    gap: 30px;
-  }
-  .pick-your-destination{
-    /* padding: 60px 0 0 0; */
-    font-size: 20px;
-  }
-  .planet-container img{
-    width: 300px;
-    height:300px;
-    padding: 0;
+    width: 100%;
+    padding: 0; 
   }
   .destination-planets-container{
     gap:0;
     flex-direction: column;
+    width: 99%;
+    gap: 0;
+    align-items: center;
   }
- 
+  .planet-container{
+    height: auto;
+    width: 100%;
+    gap: 30px;
+  }
+  .pick-your-destination{
+    font-size: 20px;
+    padding: 20px 0 0 2%;
+    letter-spacing: 3.38px;
+  }
+  .destination-image img{
+    width: 300px;
+    height:300px;
+    padding: 0;
+  }
   .destination-info{
     width: 100%;
     justify-content: center;
@@ -197,6 +185,9 @@
   .planet-lane{
     width: 80%;
   }
+  .destination-image{
+    width: 100%;
+  }
 }
 /* MOBILE */
 @media (max-width: 500px){
@@ -205,23 +196,22 @@
   }
   .destinations-content-container{
     margin-top: 0;
-    height: 720px;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0 20px;
   }
   .planet-container{
-    height: auto;
     align-items: center;
     gap: 18px;
   }
   .pick-your-destination{
-    padding-top: 120px;
+    margin: 60px 0 0 0;
     font-size: 16px;
+    letter-spacing: 2.7px;
+    padding: 0;
   }
   .destination-planets-container{
    margin-top: 40px;
-   /* height: auto; */
   }
   .planet-container img{
     width: 170px;
@@ -251,11 +241,10 @@
   }
   .planet-description{
     text-align: center;
-    width: 90%;
+    width: 80%;
     line-height: 25px;
     font-size: 15px;
     padding: 0 0 20px 0;
-    height: 125px;
   }
   .planet-lane{
     width: 90%;

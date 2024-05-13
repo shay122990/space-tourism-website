@@ -81,12 +81,6 @@
 .crew-tab-menu button.active{
     background-color: var(--text-color-one);
   }
-.crew-image{
-    width: 600px;
-}
-.crew-image img{
-   height: 700px;
-}
 
 @media (max-width: 1000px){
     .crew-home-page{
@@ -104,7 +98,7 @@
     .meet-your-crew{
         font-size: 20px;
         margin-top: 80px;
-        padding: 20px 0 0 3%;
+        padding: 20px 0 40px 2%;
         letter-spacing: 3.38px;
     }
     .crew-content{
@@ -113,7 +107,7 @@
        align-items: center;
        text-align: center;
        justify-content: flex-start;
-       margin-top: 30px;
+       margin-top: 0;
     }
     .crew-details{
        text-align: center;
@@ -172,7 +166,6 @@
     .crew-content{
         flex-direction: column-reverse;
         justify-content: flex-end;
-        
     }
     .crew-details{
         flex-direction: column-reverse;
