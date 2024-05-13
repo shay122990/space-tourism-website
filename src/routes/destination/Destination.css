@@ -10,15 +10,16 @@
 .destinations-content-container {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   justify-content: center;
   align-items: flex-start;
   padding: 0 0 0 12%;
+  height: 100vh;
 }
 .destination-planets-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   gap: 8%;
 }
@@ -30,7 +31,7 @@
 .pick-your-destination{
   font-size: 28px;
   letter-spacing: 4.72px;
-  padding: 100px 0;
+  padding: 20px 0 20px 0;
 }
 .pick-your-destination strong {
   opacity: 0.4;
