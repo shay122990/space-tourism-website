@@ -5,6 +5,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
 }
 .main-crew-container{
     display: flex;
@@ -91,15 +92,13 @@
     .main-crew-container{
         margin-top: 0;
         padding: 0;
-        height: 1024px; 
         justify-content: center;
         width: 100%;
     }
     .meet-your-crew{
-        font-size: 20px;
-        margin-top: 80px;
         padding: 20px 0 40px 2%;
-        letter-spacing: 3.38px;
+        font-size: 20px;
+        letter-spacing: 3.38;
     }
     .crew-content{
        flex-direction: column;
@@ -154,7 +153,7 @@
         background-image: url(../../assets/crew/background-crew-mobile.jpg);
     }
     .main-crew-container{
-        display: block;
+       display: block;
        align-items: center;
        padding: 0 20px;
     }
