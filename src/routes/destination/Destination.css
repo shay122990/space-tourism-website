@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
 }
 .main-destination-container{
@@ -28,8 +28,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10%;
-  padding-left: 10%;
+  gap: 12%;
+  padding: 4% 0 0 4%;
 }
 .destination-image{
   width: 50%;
@@ -81,11 +81,12 @@
   font-size: 18px;
   color: var(--text-color-one);
   margin: 0;
-  padding-bottom:40px;
+  padding-bottom:60px;
   width: 80%;
 }
 .planet-lane{
-  width: 100%;
+  width: 80%;
+  margin: 8px 0;
   height: 1px;
   border: 0 solid;
   background-color: #ffffff34; 
@@ -115,12 +116,12 @@
 }
 /* tablet to desktop */
 @media (min-width:1000px) and (max-width:1200px) {
-  .pick-your-destination{
-    padding-top: 40px;
-  }
   .planets-content{
-    gap: 0;
-    padding: 0;
+    gap: 2%;
+    padding: 3% 0 0 0;
+  }
+  .destination-image img{
+    width: 400px;
   }
 }
 /* TABLET */
