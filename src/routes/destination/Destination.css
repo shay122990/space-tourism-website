@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow-y: auto;
 }
 .main-destination-container{
@@ -69,7 +69,6 @@
 }
 .destination-details{
   width: 100%;
-  height: 442px;
 }
 .destination-name{
   font-size: 100px;
@@ -100,7 +99,7 @@
   justify-content: start;
   gap: 50px;
   text-align: left;
-  padding: 10px 0;
+  padding-top: 10px;
 }
 .distance-travel-container span {
   font-size: 14px;
@@ -118,6 +117,9 @@
 }
 /* tablet to desktop */
 @media (min-width:1000px) and (max-width:1200px) {
+  .pick-your-destination{
+    padding-top: 40px;
+  }
   .planets-content{
     gap: 2%;
     padding: 3% 0 0 0;
@@ -202,9 +204,6 @@
   .destination-image img{
     width: 170px;
   }
-  .destination-details{
-    width: 80%;
-  }
   .destination-tab-buttons{
     margin-top: 20px;
   }
@@ -216,9 +215,9 @@
     padding: 0;
   }
   .destination-tab-buttons li:hover,
-  .destination-tab-buttons li.active {
+  .destination-tab-buttons li.active{
     text-underline-offset: 10px;
-  }
+}
   .destination-name{
     font-size: 56px;
   }
@@ -229,7 +228,7 @@
   .distance-travel-container{
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
  
 }
