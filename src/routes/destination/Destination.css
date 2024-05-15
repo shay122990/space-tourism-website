@@ -98,7 +98,7 @@
   justify-content: start;
   gap: 50px;
   text-align: left;
-  padding-top: 10px;
+  padding: 10px 0;
 }
 .distance-travel-container span {
   font-size: 14px;
@@ -209,6 +209,17 @@
   .destination-tab-buttons li{
     font-size: 14px;
     padding: 0;
+  }
+  .destination-tab-buttons li:hover {
+    text-decoration: underline var(--hover-color);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+  }
+
+  .destination-tab-buttons li.active {
+    text-decoration: underline var(--text-color-main);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
   }
   .destination-name{
     font-size: 56px;
