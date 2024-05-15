@@ -41,7 +41,11 @@ const Destination = () => {
                         handleTabChange(destination);
                       }
                     }}
-                    aria-selected={selectedDestination.id === destination.id}
+                    aria-selected={
+                      selectedDestination.id === destination.id
+                        ? "true"
+                        : "false"
+                    }
                     aria-controls={destination.id}
                   >
                     {destination.name}
