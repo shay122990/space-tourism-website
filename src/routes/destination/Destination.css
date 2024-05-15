@@ -25,7 +25,6 @@
   opacity: 0.4;
 }
 .planets-content {
-  border: solid red 1px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -231,7 +230,6 @@
   .distance-travel-container{
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 40px;
   }
  
 }
