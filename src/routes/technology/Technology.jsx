@@ -1,3 +1,5 @@
+//
+
 import { useState, useEffect } from "react";
 import "./Technology.css";
 import technologyData from "../../data/technology.js";
@@ -34,28 +36,50 @@ const Technology = () => {
         </h1>
         <div className="technology-content">
           <div className="tech-details">
-            <div className="tech-tab-buttons">
-              {technologyData.map((technology) => (
-                <button
-                  key={technology.id}
-                  className={
-                    selectedTechnology.id === technology.id ? "active" : ""
-                  }
-                  onClick={() => handleTabChange(technology)}
-                >
-                  {technology.id + 1}
-                </button>
-              ))}
-            </div>
+            <nav
+              className="tech-tab-buttons"
+              role="navigation"
+              aria-label="Technology Tabs"
+            >
+              <ul role="tablist">
+                {technologyData.map((technology) => (
+                  <li key={technology.id} role="presentation">
+                    <button
+                      role="tab"
+                      tabIndex={0}
+                      className={
+                        selectedTechnology.id === technology.id ? "active" : ""
+                      }
+                      onClick={() => handleTabChange(technology)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          handleTabChange(technology);
+                        }
+                      }}
+                      aria-selected={selectedTechnology.id === technology.id}
+                      aria-controls={`technology-panel-${technology.id}`}
+                      id={`technology-tab-${technology.id}`}
+                    >
+                      {technology.id + 1}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
             <div className="tech-info">
-              <span className="terminology">the terminology...</span>
+              <span className="terminology">The terminology...</span>
               <h2 className="tech-name">{selectedTechnology.name}</h2>
               <p className="tech-description">
                 {selectedTechnology.description}
               </p>
             </div>
           </div>
-          <div className="tech-image">
+          <div
+            id={`technology-panel-${selectedTechnology.id}`}
+            role="tabpanel"
+            aria-labelledby={`technology-tab-${selectedTechnology.id}`}
+            className="tech-image"
+          >
             <img src={imageSrc} alt={selectedTechnology.name} />
           </div>
         </div>

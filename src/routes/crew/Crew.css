@@ -56,10 +56,12 @@
     width: 72%;
     padding-bottom: 50px;
 }
-.crew-tab-menu{
+
+.crew-tab-menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     gap: 24px;
     width:132px;
     list-style-type: none;
@@ -86,14 +88,10 @@
 @media (max-width: 1000px){
     .crew-home-page{
         background-image: url(../../assets//crew/background-crew-tablet.jpg);
-        align-items: center;
-        justify-content: center;
     }
     .main-crew-container{
-        margin-top: 0;
         padding: 0;
         justify-content: center;
-        width: 100%;
     }
     .meet-your-crew{
         padding: 20px 0 40px 2%;
@@ -132,7 +130,6 @@
         padding: 0;
     }
     .crew-tab-menu{
-        position: relative;
         height: 20px;
         gap: 16px;
     }
@@ -153,12 +150,12 @@
         background-image: url(../../assets/crew/background-crew-mobile.jpg);
     }
     .main-crew-container{
-       display: block;
+       margin-top: 80px;
        align-items: center;
-       padding: 0 20px;
+       text-align: center;
     }
     .meet-your-crew{
-        margin: 60px 0 0 0;
+        padding: 0 0 20px 0;
         font-size: 16px;
         letter-spacing: 2.7px;
     }
@@ -187,20 +184,24 @@
         margin: 0;
         font-size: 15px;
         height: auto;
-        width: 100%;
+        width: 90%;
         line-height: 25px;
     }
     .crew-tab-menu{
         padding: 30px 0;
-        gap: 12px;
+    }
+    .crew-tab-menu ul{
+        gap: 0;
     }
     .crew-image{
+        width: 90%;
         margin: 0;
         border-bottom: 0 solid #ffffff34;
         border-width: 1px;
     }
     .crew-image img{
-        height: 223px;
+        width: 177px;
+        height: 222px;
         margin-bottom: -3px;
     }
 }
