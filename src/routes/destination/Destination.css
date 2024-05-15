@@ -56,18 +56,20 @@
   letter-spacing: 2.7px;
   color: var(--text-color-one);
 }
-.destination-tab-buttons li:hover {
-  text-decoration: underline var(--hover-color);
+.destination-tab-buttons li:hover,
+.destination-tab-buttons li.active{
   text-underline-offset: 18px;
   text-decoration-thickness: 2px;
+}
+.destination-tab-buttons li:hover {
+  text-decoration: underline var(--hover-color);
 }
 .destination-tab-buttons li.active{
   text-decoration: underline var(--text-color-main);
-  text-underline-offset: 18px;
-  text-decoration-thickness: 2px;
 }
 .destination-details{
   width: 100%;
+  height: 442px;
 }
 .destination-name{
   font-size: 100px;
@@ -137,7 +139,7 @@
   .pick-your-destination{
     padding: 20px 0 40px 2%;
     font-size: 20px;
-    letter-spacing: 3.38;
+    letter-spacing: 3.38px;
   }
   .planets-content{
     flex-direction: column;
@@ -200,6 +202,9 @@
   .destination-image img{
     width: 170px;
   }
+  .destination-details{
+    width: 80%;
+  }
   .destination-tab-buttons{
     margin-top: 20px;
   }
@@ -210,16 +215,9 @@
     font-size: 14px;
     padding: 0;
   }
-  .destination-tab-buttons li:hover {
-    text-decoration: underline var(--hover-color);
-    text-underline-offset: 10px;
-    text-decoration-thickness: 2px;
-  }
-
+  .destination-tab-buttons li:hover,
   .destination-tab-buttons li.active {
-    text-decoration: underline var(--text-color-main);
     text-underline-offset: 10px;
-    text-decoration-thickness: 2px;
   }
   .destination-name{
     font-size: 56px;
@@ -231,6 +229,7 @@
   .distance-travel-container{
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 50px;
   }
  
 }

@@ -25,7 +25,7 @@ const Destination = () => {
             />
           </div>
           <div className="destination-info">
-            <div className="destination-tab-buttons">
+            <nav className="destination-tab-buttons" role="navigation">
               <ul role="tablist">
                 {destinationsData.map((destination) => (
                   <li
@@ -48,7 +48,7 @@ const Destination = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </nav>
             <div className="destination-details">
               <h2 className="destination-name">{selectedDestination.name}</h2>
               <p className="planet-description">
