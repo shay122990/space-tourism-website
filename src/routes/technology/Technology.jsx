@@ -40,7 +40,7 @@ const Technology = () => {
               role="navigation"
               aria-label="Technology Tabs"
             >
-              <ul role="tablist" className="crew-tab-menu">
+              <ul>
                 {technologyData.map((technology) => (
                   <li
                     key={technology.id}
