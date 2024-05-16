@@ -63,10 +63,10 @@
   text-decoration-thickness: 2px;
 }
 .destination-tab-buttons li:hover {
-  text-decoration: underline var(--hover-color) !important;
+  text-decoration-color: var(--hover-color);
 }
 .destination-tab-buttons li.active{
-  text-decoration: underline var(--text-color-main) !important;
+  text-decoration-color: var(--text-color-main);
 }
 .destination-details{
   width: 100%;
@@ -219,6 +219,7 @@
   }
   .destination-tab-buttons li:hover,
   .destination-tab-buttons li.active{
+    text-decoration: underline;
     text-underline-offset: 10px;
 }
   .destination-name{
