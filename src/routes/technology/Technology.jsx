@@ -44,7 +44,8 @@ const Technology = () => {
                 {technologyData.map((technology) => (
                   <li
                     key={technology.id}
-                    role="presentation"
+                    role="tab"
+                    tabIndex={0}
                     className={
                       selectedTechnology.id === technology.id ? "active" : ""
                     }
