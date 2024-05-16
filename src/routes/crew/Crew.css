@@ -78,6 +78,9 @@
   .crew-tab-menu li.active {
     background-color: var(--text-color-one);
   }
+  .crew-image img{
+    height: 712px;
+  }
 
 @media (max-width: 1000px){
     .crew-home-page{
@@ -196,8 +199,7 @@
         border-width: 1px;
     }
     .crew-image img{
-        width: 177px;
-        height: 222px;
+        height: 223px;
         margin-bottom: -3px;
     }
 }
