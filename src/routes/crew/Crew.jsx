@@ -22,17 +22,11 @@ const Crew = () => {
               <h3 className="crew-name">{selectedCrew.name}</h3>
               <p className="crew-bio">{selectedCrew.bio}</p>
             </div>
-            <nav
-              className="crew-tab-menu"
-              role="navigation"
-              aria-label="Crew Tabs"
-            >
-              <ul role="tablist">
+            <nav className="crew-tab-menu">
+              <ul>
                 {crewData.map((crew) => (
                   <li
                     key={crew.id}
-                    role="tab"
-                    tabIndex={0}
                     className={selectedCrew.id === crew.id ? "active" : ""}
                     onClick={() => handleTabChange(crew)}
                     onKeyDown={(e) => {
