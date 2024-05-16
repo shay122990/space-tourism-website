@@ -218,7 +218,8 @@
     padding: 0;
   }
   .destination-tab-buttons li:hover,
-  .destination-tab-buttons li.active{
+  .destination-tab-buttons li.active,
+  .destination-tab-buttons:active{
     text-decoration: underline;
     text-underline-offset: 10px;
 }
