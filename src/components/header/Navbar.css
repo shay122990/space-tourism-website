@@ -135,17 +135,15 @@
     padding-left: 0;
   }
   .nav-links-mobile {
-    position: absolute;
+    position: fixed;
+    height: 100vh;
+    background-color:#97979744;
+    backdrop-filter: blur(12px);
     top: 0;
     right: 0;
-    list-style: none;
-    transition: all 0.5s ease-in-out;
     width: 60%;
-    height: 100dvh;
-    background-color: #97979744;
-    backdrop-filter: blur(12px);
     padding: 100px 0 0 20px;
-    margin-top: -28px;
+    transition: all 0.5s ease-in-out;
   }
   ul li {
     width: 100%;
