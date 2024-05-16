@@ -138,16 +138,15 @@
     transition: all 0.5s ease-in-out;
     width: 60%;
     height: 100vh;
-    background-color: #ffffff16;
-    backdrop-filter: blur(10px);
+    background-color: #ffffff22;
+    backdrop-filter: blur(12px);
     padding: 100px 0 0 20px;
     margin-top: -30px;
   }
   .nav-link:hover,
   .nav-link.active {
-    /* text-underline-offset: 8px; 
-      text-decoration-thickness: 3px; */
-    text-decoration: none;
+    text-underline-offset: 8px; 
+    text-decoration-thickness: 1px;
   }
   ul li {
     width: 100%;

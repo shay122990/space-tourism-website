@@ -217,7 +217,11 @@
     font-size: 14px;
     padding: 0;
   }
-  .destination-tab-buttons li:hover,
+  .destination-tab-buttons li:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+  }
   .destination-tab-buttons li.active{
     text-decoration: underline;
     text-underline-offset: 10px;
