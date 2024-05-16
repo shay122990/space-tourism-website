@@ -57,17 +57,24 @@
   letter-spacing: 2.7px;
   color: var(--text-color-one);
 }
-.destination-tab-buttons li:hover,
-.destination-tab-buttons li:active{
+.destination-tab-buttons ul li:hover,
+.destination-tab-buttons ul li:focus {
   text-decoration: underline;
-  text-underline-offset: 18px;
+  outline: none;
+}
+.destination-tab-buttons ul li.active{
+  text-decoration: underline;
+}
+.destination-tab-buttons ul li:hover,
+.destination-tab-buttons ul li.active{
+  text-underline-offset: 18px; 
   text-decoration-thickness: 3px;
 }
-.destination-tab-buttons li:hover {
-  text-decoration-color: var(--hover-color);
+.destination-tab-buttons ul li:hover{
+  text-decoration-color:var(--hover-color);
 }
-.destination-tab-buttons li.active{
-  text-decoration-color: var(--text-color-main);
+.destination-tab-buttons ul li.active{
+  text-decoration-color:var(--text-color-main);
 }
 .destination-details{
   width: 100%;
@@ -218,11 +225,31 @@
     font-size: 14px;
     padding: 0;
   }
-  .destination-tab-buttons li:hover,
+  /* .destination-tab-buttons li:hover,
   .destination-tab-buttons li.active{
     text-decoration: underline;
-    /* text-underline-offset: 10px; 
-    text-decoration-thickness: 1px; */
+    text-underline-offset: 10px; 
+    text-decoration-thickness: 1px;
+    outline: none;
+  } */
+  .destination-tab-buttons ul li:hover,
+  .destination-tab-buttons ul li:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+  .destination-tab-buttons ul li.active{
+  text-decoration: underline;
+  }
+  .destination-tab-buttons ul li:hover,
+  .destination-tab-buttons ul li.active{
+    text-underline-offset: 10px; 
+    text-decoration-thickness: 1px;
+  }
+  .destination-tab-buttons ul li:hover{
+    text-decoration-color:var(--hover-color);
+  }
+  .destination-tab-buttons ul li.active{
+    text-decoration-color:var(--text-color-main);
   }
   .destination-name{
     font-size: 56px;
