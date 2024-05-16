@@ -58,6 +58,7 @@
 }
 .destination-tab-buttons li:hover,
 .destination-tab-buttons li.active{
+  text-decoration: underline;
   text-underline-offset: 18px;
   text-decoration-thickness: 2px;
 }
