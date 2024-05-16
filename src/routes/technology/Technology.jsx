@@ -35,12 +35,8 @@ const Technology = () => {
         </h1>
         <div className="technology-content">
           <div className="tech-details">
-            <nav
-              className="tech-tab-buttons"
-              role="navigation"
-              aria-label="Technology Tabs"
-            >
-              <ul role="tablist">
+            <nav className="tech-tab-buttons">
+              <ul>
                 {technologyData.map((technology) => (
                   <li
                     key={technology.id}
@@ -55,9 +51,6 @@ const Technology = () => {
                         handleTabChange(technology);
                       }
                     }}
-                    aria-selected={selectedTechnology.id === technology.id}
-                    aria-controls={`technology-panel-${technology.id}`}
-                    id={`technology-tab-${technology.id}`}
                   >
                     {technology.id + 1}
                   </li>

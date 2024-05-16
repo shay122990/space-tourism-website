@@ -22,7 +22,7 @@ const Crew = () => {
               <h3 className="crew-name">{selectedCrew.name}</h3>
               <p className="crew-bio">{selectedCrew.bio}</p>
             </div>
-            <nav>
+            <nav className="crew-tab-menu">
               <ul>
                 {crewData.map((crew) => (
                   <li
