@@ -1,5 +1,4 @@
 //
-
 import { useState, useEffect } from "react";
 import "./Technology.css";
 import technologyData from "../../data/technology.js";
@@ -41,27 +40,25 @@ const Technology = () => {
               role="navigation"
               aria-label="Technology Tabs"
             >
-              <ul role="tablist">
+              <ul role="tablist" className="crew-tab-menu">
                 {technologyData.map((technology) => (
-                  <li key={technology.id} role="presentation">
-                    <button
-                      role="tab"
-                      tabIndex={0}
-                      className={
-                        selectedTechnology.id === technology.id ? "active" : ""
+                  <li
+                    key={technology.id}
+                    role="presentation"
+                    className={
+                      selectedTechnology.id === technology.id ? "active" : ""
+                    }
+                    onClick={() => handleTabChange(technology)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        handleTabChange(technology);
                       }
-                      onClick={() => handleTabChange(technology)}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          handleTabChange(technology);
-                        }
-                      }}
-                      aria-selected={selectedTechnology.id === technology.id}
-                      aria-controls={`technology-panel-${technology.id}`}
-                      id={`technology-tab-${technology.id}`}
-                    >
-                      {technology.id + 1}
-                    </button>
+                    }}
+                    aria-selected={selectedTechnology.id === technology.id}
+                    aria-controls={`technology-panel-${technology.id}`}
+                    id={`technology-tab-${technology.id}`}
+                  >
+                    {technology.id + 1}
                   </li>
                 ))}
               </ul>

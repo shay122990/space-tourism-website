@@ -42,7 +42,10 @@
   justify-content: center;
   gap: 20px;
 }
-.tech-tab-buttons button{
+.tech-tab-buttons li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -51,10 +54,10 @@
   font-family: "Bellefair", sans-serif;
   background-color: transparent;
 }
-.tech-tab-buttons button:hover{
+.tech-tab-buttons li:hover{
   border: 1px solid var(--text-color-main);
 }
-.tech-tab-buttons button.active{
+.tech-tab-buttons li.active{
   background-color: var(--text-color-main);
   color: #000;
 }
@@ -109,7 +112,7 @@
       padding:0;
       gap: 16px;
     }
-    .tech-tab-buttons button{
+    .tech-tab-buttons li{
       width: 58px;
       height: 58px;
       font-size: 24px;
@@ -140,10 +143,10 @@
       font-size: 16px;
       letter-spacing: 2.7px;
     }
-    .tech-tab-buttons ul li{
+    .tech-tab-buttons ul{
       padding: 0;
     }
-    .tech-tab-buttons button{
+    .tech-tab-buttons li{
       width: 40px;
       height: 40px;
       font-size: 16px;
