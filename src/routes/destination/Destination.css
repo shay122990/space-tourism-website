@@ -217,6 +217,9 @@
     font-size: 14px;
     padding: 0;
   }
+  .destination-tab-buttons li:hover{
+    text-decoration: underline;
+  }
   .destination-tab-buttons li.active{
     text-decoration: underline;
     text-decoration-thickness: 1px;
