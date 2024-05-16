@@ -119,6 +119,10 @@
   .nav-links {
     display: none;
   }
+  .nav-link:hover,
+  .nav-link.active {
+    text-decoration: none;
+  }
   .nav-lane {
     display: none;
   }
@@ -137,16 +141,11 @@
     list-style: none;
     transition: all 0.5s ease-in-out;
     width: 60%;
-    height: 100vh;
-    background-color: #ffffff22;
+    height: 100dvh;
+    background-color: #97979744;
     backdrop-filter: blur(12px);
     padding: 100px 0 0 20px;
-    margin-top: -30px;
-  }
-  .nav-link:hover,
-  .nav-link.active {
-    text-underline-offset: 8px; 
-    text-decoration-thickness: 1px;
+    margin-top: -28px;
   }
   ul li {
     width: 100%;
