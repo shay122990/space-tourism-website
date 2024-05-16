@@ -27,7 +27,7 @@ const Crew = () => {
               role="navigation"
               aria-label="Crew Tabs"
             >
-              <ul>
+              <ul role="tablist">
                 {crewData.map((crew) => (
                   <li
                     key={crew.id}
