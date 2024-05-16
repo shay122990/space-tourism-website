@@ -62,10 +62,10 @@
   text-decoration-thickness: 2px;
 }
 .destination-tab-buttons li:hover {
-  text-decoration: underline var(--hover-color);
+  text-decoration: underline var(--hover-color) !important;
 }
 .destination-tab-buttons li.active{
-  text-decoration: underline var(--text-color-main);
+  text-decoration: underline var(--text-color-main) !important;
 }
 .destination-details{
   width: 100%;
