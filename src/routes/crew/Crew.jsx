@@ -22,7 +22,7 @@ const Crew = () => {
               <h3 className="crew-name">{selectedCrew.name}</h3>
               <p className="crew-bio">{selectedCrew.bio}</p>
             </div>
-            <nav className="crew-tab-menu">
+            <nav>
               <ul>
                 {crewData.map((crew) => (
                   <li
@@ -34,9 +34,6 @@ const Crew = () => {
                         handleTabChange(crew);
                       }
                     }}
-                    aria-selected={selectedCrew.id === crew.id}
-                    aria-controls={`crew-panel-${crew.id}`}
-                    id={`crew-tab-${crew.id}`}
                   ></li>
                 ))}
               </ul>

@@ -25,13 +25,11 @@ const Destination = () => {
             />
           </div>
           <div className="destination-info">
-            <nav className="destination-tab-buttons" role="navigation">
-              <ul role="tablist">
+            <nav className="destination-tab-buttons">
+              <ul>
                 {destinationsData.map((destination) => (
                   <li
                     key={destination.id}
-                    role="tab"
-                    tabIndex={0}
                     className={
                       selectedDestination.id === destination.id ? "active" : ""
                     }
@@ -41,12 +39,6 @@ const Destination = () => {
                         handleTabChange(destination);
                       }
                     }}
-                    aria-selected={
-                      selectedDestination.id === destination.id
-                        ? "true"
-                        : "false"
-                    }
-                    aria-controls={destination.id}
                   >
                     {destination.name}
                   </li>
