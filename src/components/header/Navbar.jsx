@@ -9,7 +9,9 @@ const Navbar = () => {
   const [mobile, setMobile] = useState(false);
   return (
     <nav className="navbar">
-      <img className="logo-image" src={logoImg} alt="logo-image" />
+      <NavLink to="/">
+        <img className="logo-image" src={logoImg} alt="logo-image" />
+      </NavLink>
       <hr className="nav-lane" />
       <ul
         className={mobile ? "nav-links-mobile" : "nav-links"}
