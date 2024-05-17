@@ -1,4 +1,3 @@
-//
 import { useState, useEffect } from "react";
 import "./Technology.css";
 import technologyData from "../../data/technology.js";
@@ -38,21 +37,20 @@ const Technology = () => {
             <nav className="tech-tab-buttons">
               <ul>
                 {technologyData.map((technology) => (
-                  <li
-                    key={technology.id}
-                    role="tab"
-                    tabIndex={0}
-                    className={
-                      selectedTechnology.id === technology.id ? "active" : ""
-                    }
-                    onClick={() => handleTabChange(technology)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        handleTabChange(technology);
+                  <li key={technology.id}>
+                    <button
+                      onClick={() => handleTabChange(technology)}
+                      className={
+                        selectedTechnology.id === technology.id ? "active" : ""
                       }
-                    }}
-                  >
-                    {technology.id + 1}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          handleTabChange(technology);
+                        }
+                      }}
+                    >
+                      {technology.id + 1}
+                    </button>
                   </li>
                 ))}
               </ul>

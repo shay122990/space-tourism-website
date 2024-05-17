@@ -137,8 +137,9 @@
   .nav-links-mobile {
     position: fixed;
     height: 100vh;
-    background-color:#97979744;
-    backdrop-filter: blur(12px);
+    background-color:#9797973d;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(24px);
     top: 0;
     right: 0;
     width: 60%;
@@ -146,11 +147,8 @@
     transition: all 0.5s ease-in-out;
     margin: 0;
   }
-  ul li {
-    width: 100%;
+ .navbar ul li {
     padding: 0 0 40px 10px;
-    transition: all 0.5s ease-in-out;
-    text-align: left;
   }
   .mobile-menu-icon {
     display: block;

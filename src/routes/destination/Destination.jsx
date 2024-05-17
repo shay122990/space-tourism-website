@@ -28,19 +28,22 @@ const Destination = () => {
             <nav className="destination-tab-buttons">
               <ul>
                 {destinationsData.map((destination) => (
-                  <li
-                    key={destination.id}
-                    className={
-                      selectedDestination.id === destination.id ? "active" : ""
-                    }
-                    onClick={() => handleTabChange(destination)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        handleTabChange(destination);
+                  <li key={destination.id}>
+                    <button
+                      className={
+                        selectedDestination.id === destination.id
+                          ? "active"
+                          : ""
                       }
-                    }}
-                  >
-                    {destination.name}
+                      onClick={() => handleTabChange(destination)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          handleTabChange(destination);
+                        }
+                      }}
+                    >
+                      {destination.name}
+                    </button>
                   </li>
                 ))}
               </ul>

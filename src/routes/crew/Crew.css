@@ -53,10 +53,11 @@
     font-size: 18px;
     line-height: 32px;
     color: var(--text-color-one);
-    width: 72%;
-    padding-bottom: 50px;
+    width: 444px;
+    height: 160px;
+    margin: 0  0 18px 0;
 }
-.crew-tab-menu ul {
+.crew-tab-buttons ul {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -65,23 +66,33 @@
     padding: 0;
     margin: 0;
   }
-  .crew-tab-menu li {
+  .crew-tab-buttons button{
+    border: none;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #97979757;
     cursor: pointer;
   }
-  .crew-tab-menu li:hover {
+  .crew-tab-buttons button:hover {
     background-color: var(--hover-color);
   }
-  .crew-tab-menu li.active {
+  .crew-tab-buttons button.active {
     background-color: var(--text-color-one);
   }
   .crew-image img{
     height: 712px;
   }
-
+/* tablet to desktop */
+@media (min-width:1000px) and (max-width:1200px) {
+  .crew-bio{
+    width: 400px;
+    height: 200px;
+  }
+  .crew-image img{
+    height: 500px;
+  }
+  }
 @media (max-width: 1000px){
     .crew-home-page{
         background-image: url(../../assets//crew/background-crew-tablet.jpg);
@@ -122,14 +133,16 @@
        padding: 0;
     }
     .crew-bio{
+        display: flex;
+        align-items: center;
         font-size: 16px;
         width: 458px;
         padding: 0;
     }
-    .crew-tab-menu ul {
+    .crew-tab-buttons ul {
         gap: 16px;
     }
-    .crew-tab-menu li {
+    .crew-tab-buttons li {
         width: 12px;
         height: 12px;
     }
@@ -186,11 +199,16 @@
     .crew-tab-menu{
         padding: 30px 0;
     }
-    .crew-tab-menu ul {
-        gap: 19px;
+    .crew-tab-buttons ul {
+        gap: 18px;
     }
-    .crew-tab-menu li{
+    .crew-tab-buttons li{
+        padding: 30px 0;
+    }
+    .crew-tab-buttons button{
         padding: 0;
+        width: 12px;
+        height: 12px;
     }
     .crew-image{
         width: 90%;

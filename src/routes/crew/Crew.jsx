@@ -22,19 +22,20 @@ const Crew = () => {
               <h3 className="crew-name">{selectedCrew.name}</h3>
               <p className="crew-bio">{selectedCrew.bio}</p>
             </div>
-            <nav className="crew-tab-menu">
+            <nav className="crew-tab-buttons">
               <ul>
                 {crewData.map((crew) => (
-                  <li
-                    key={crew.id}
-                    className={selectedCrew.id === crew.id ? "active" : ""}
-                    onClick={() => handleTabChange(crew)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        handleTabChange(crew);
-                      }
-                    }}
-                  ></li>
+                  <li key={crew.id}>
+                    <button
+                      className={selectedCrew.id === crew.id ? "active" : ""}
+                      onClick={() => handleTabChange(crew)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          handleTabChange(crew);
+                        }
+                      }}
+                    ></button>
+                  </li>
                 ))}
               </ul>
             </nav>

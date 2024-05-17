@@ -52,28 +52,26 @@
   gap: 36px;
   padding: 20px 0 20px 0;
 }
-.destination-tab-buttons li{
+.destination-tab-buttons button{
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
   letter-spacing: 2.7px;
   color: var(--text-color-one);
 }
-.destination-tab-buttons ul li:hover,
-.destination-tab-buttons ul li:focus {
+.destination-tab-buttons button:hover,
+.destination-tab-buttons button:focus,
+.destination-tab-buttons button.active {
   text-decoration: underline;
-  outline: none;
-}
-.destination-tab-buttons ul li.active{
-  text-decoration: underline;
-}
-.destination-tab-buttons ul li:hover,
-.destination-tab-buttons ul li.active{
   text-underline-offset: 18px; 
   text-decoration-thickness: 3px;
 }
-.destination-tab-buttons ul li:hover{
+.destination-tab-buttons button:hover{
   text-decoration-color:var(--hover-color);
 }
-.destination-tab-buttons ul li.active{
+.destination-tab-buttons button.active{
   text-decoration-color:var(--text-color-main);
 }
 .destination-details{
@@ -219,37 +217,21 @@
     margin-top: 20px;
   }
   .destination-tab-buttons ul{
-    gap: 24px;
+    gap: 0;
   }
   .destination-tab-buttons li{
-    font-size: 14px;
     padding: 0;
   }
-  /* .destination-tab-buttons li:hover,
-  .destination-tab-buttons li.active{
-    text-decoration: underline;
+  .destination-tab-buttons button{
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: var(--text-color-one);
+  }
+  .destination-tab-buttons button:hover,
+  .destination-tab-buttons button:focus,
+  .destination-tab-buttons button.active {
     text-underline-offset: 10px; 
     text-decoration-thickness: 1px;
-    outline: none;
-  } */
-  .destination-tab-buttons ul li:hover,
-  .destination-tab-buttons ul li:focus {
-    text-decoration: underline;
-    outline: none;
-  }
-  .destination-tab-buttons ul li.active{
-  text-decoration: underline;
-  }
-  .destination-tab-buttons ul li:hover,
-  .destination-tab-buttons ul li.active{
-    text-underline-offset: 10px; 
-    text-decoration-thickness: 1px;
-  }
-  .destination-tab-buttons ul li:hover{
-    text-decoration-color:var(--hover-color);
-  }
-  .destination-tab-buttons ul li.active{
-    text-decoration-color:var(--text-color-main);
   }
   .destination-name{
     font-size: 56px;
