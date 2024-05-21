@@ -46,13 +46,13 @@
   display: inline-block;
   cursor: pointer;
 }
-.destination-tab-buttons ul {
+.destination-tab-buttons {
   display: flex;
   flex-direction: row;
   gap: 36px;
   padding: 20px 0 20px 0;
 }
-.destination-tab-buttons button{
+.destination-tab-buttons .tab-item{
   border: none;
   background-color: transparent;
   text-transform: uppercase;
@@ -61,17 +61,17 @@
   letter-spacing: 2.7px;
   color: var(--text-color-one);
 }
-.destination-tab-buttons button:hover,
-.destination-tab-buttons button:focus,
-.destination-tab-buttons button.active {
+.destination-tab-buttons .tab-item:hover,
+.destination-tab-buttons .tab-item:focus,
+.destination-tab-buttons .tab-item.active {
   text-decoration: underline;
   text-underline-offset: 18px; 
   text-decoration-thickness: 3px;
 }
-.destination-tab-buttons button:hover{
+.destination-tab-buttons .tab-item:hover{
   text-decoration-color:var(--hover-color);
 }
-.destination-tab-buttons button.active{
+.destination-tab-buttons .tab-item.active{
   text-decoration-color:var(--text-color-main);
 }
 .destination-details{
@@ -163,15 +163,14 @@
     width: 300px;
   }
   .destination-info{
+    margin-top: 20px;
     text-align: center;
     align-items: center;
   }
   .destination-tab-buttons {
-    margin-top: 20px;
-  }
-  .destination-tab-buttons ul {
     gap: 36px;
     padding:0;
+    margin: 20px 0;
   }
   .destination-name{
     font-size: 80px;
@@ -213,23 +212,14 @@
     width: 170px;
     height: 170px;
   }
-  .destination-tab-buttons{
-    margin-top: 20px;
-  }
-  .destination-tab-buttons ul{
-    gap: 0;
-  }
-  .destination-tab-buttons li{
-    padding: 0;
-  }
-  .destination-tab-buttons button{
+  .destination-tab-buttons .tab-item{
     font-size: 14px;
     letter-spacing: 2.36px;
     color: var(--text-color-one);
   }
-  .destination-tab-buttons button:hover,
-  .destination-tab-buttons button:focus,
-  .destination-tab-buttons button.active {
+  .destination-tab-buttons .tab-item:hover,
+  .destination-tab-buttons .tab-item:focus,
+  .destination-tab-buttons .tab-item.active {
     text-underline-offset: 10px; 
     text-decoration-thickness: 1px;
   }
@@ -243,6 +233,7 @@
   .distance-travel-container{
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 40px;
   }
  
 }

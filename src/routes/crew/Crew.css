@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
 }
 .main-crew-container{
@@ -57,7 +57,7 @@
     height: 160px;
     margin: 0  0 18px 0;
 }
-.crew-tab-buttons ul {
+.crew-tab-buttons {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -66,7 +66,7 @@
     padding: 0;
     margin: 0;
   }
-  .crew-tab-buttons button{
+  .crew-tab-buttons .tab-item{
     border: none;
     width: 15px;
     height: 15px;
@@ -74,10 +74,10 @@
     background-color: #97979757;
     cursor: pointer;
   }
-  .crew-tab-buttons button:hover {
+  .crew-tab-buttons .tab-item:hover {
     background-color: var(--hover-color);
   }
-  .crew-tab-buttons button.active {
+  .crew-tab-buttons .tab-item.active {
     background-color: var(--text-color-one);
   }
   .crew-image img{
@@ -138,11 +138,12 @@
         font-size: 16px;
         width: 458px;
         padding: 0;
+        margin: 0;
     }
-    .crew-tab-buttons ul {
-        gap: 16px;
+    .crew-tab-buttons {
+        margin: 20px 0;
     }
-    .crew-tab-buttons li {
+    .crew-tab-buttons .tab-item {
         width: 12px;
         height: 12px;
     }
@@ -196,19 +197,8 @@
         width: 90%;
         line-height: 25px;
     }
-    .crew-tab-menu{
-        padding: 30px 0;
-    }
-    .crew-tab-buttons ul {
-        gap: 18px;
-    }
-    .crew-tab-buttons li{
-        padding: 30px 0;
-    }
-    .crew-tab-buttons button{
-        padding: 0;
-        width: 12px;
-        height: 12px;
+    .crew-tab-buttons{
+        margin: 30px 0;
     }
     .crew-image{
         width: 90%;

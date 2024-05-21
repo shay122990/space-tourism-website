@@ -1,15 +1,12 @@
 import { useState } from "react";
 import "./Destination.css";
 import destinationsData from "../../data/destinations.js";
+import Tabs from "../../components/tabs/Tabs.jsx";
 
 const Destination = () => {
   const [selectedDestination, setSelectedDestination] = useState(
     destinationsData[0]
   );
-
-  const handleTabChange = (destination) => {
-    setSelectedDestination(destination);
-  };
 
   return (
     <div className="destination-home-page">
@@ -25,29 +22,13 @@ const Destination = () => {
             />
           </div>
           <div className="destination-info">
-            <nav className="destination-tab-buttons">
-              <ul>
-                {destinationsData.map((destination) => (
-                  <li key={destination.id}>
-                    <button
-                      className={
-                        selectedDestination.id === destination.id
-                          ? "active"
-                          : ""
-                      }
-                      onClick={() => handleTabChange(destination)}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          handleTabChange(destination);
-                        }
-                      }}
-                    >
-                      {destination.name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Tabs
+              items={destinationsData}
+              selectedItem={selectedDestination}
+              onTabChange={setSelectedDestination}
+              renderTabLabel={(destination) => destination.name}
+              className="destination-tab-buttons"
+            />
             <div className="destination-details">
               <h2 className="destination-name">{selectedDestination.name}</h2>
               <p className="planet-description">

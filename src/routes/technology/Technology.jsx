@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Technology.css";
 import technologyData from "../../data/technology.js";
+import Tabs from "../../components/tabs/Tabs.jsx";
 
 const Technology = () => {
   const [selectedTechnology, setSelectedTechnology] = useState(
@@ -22,10 +23,6 @@ const Technology = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [selectedTechnology]);
 
-  const handleTabChange = (technology) => {
-    setSelectedTechnology(technology);
-  };
-
   return (
     <div className="technology-home-container">
       <div className="main-tech-container">
@@ -34,27 +31,13 @@ const Technology = () => {
         </h1>
         <div className="technology-content">
           <div className="tech-details">
-            <nav className="tech-tab-buttons">
-              <ul>
-                {technologyData.map((technology) => (
-                  <li key={technology.id}>
-                    <button
-                      onClick={() => handleTabChange(technology)}
-                      className={
-                        selectedTechnology.id === technology.id ? "active" : ""
-                      }
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          handleTabChange(technology);
-                        }
-                      }}
-                    >
-                      {technology.id + 1}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Tabs
+              items={technologyData}
+              selectedItem={selectedTechnology}
+              onTabChange={setSelectedTechnology}
+              renderTabLabel={(tech) => tech.id + 1}
+              className="tech-tab-buttons"
+            />
             <div className="tech-info">
               <span className="terminology">The terminology...</span>
               <h2 className="tech-name">{selectedTechnology.name}</h2>
