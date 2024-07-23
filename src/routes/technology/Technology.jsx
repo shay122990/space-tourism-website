@@ -26,7 +26,7 @@ const Technology = () => {
   return (
     <div className="page-container technology-home-container">
       <div className="main-tech-container">
-        <h1 className="space-launch">
+        <h1 className="page-title space-launch">
           <strong>03</strong> Space launch 101
         </h1>
         <div className="technology-content">

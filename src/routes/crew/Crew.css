@@ -9,14 +9,7 @@
     margin-top: 100px;
     padding: 0 0 0 12%;
 }
-.meet-your-crew{
-    font-size: 28px;
-    letter-spacing: 4.72px;
-    padding-top: 100px;
-}
-.meet-your-crew strong{
-    opacity: 0.4;
-}
+
 .crew-content{
     display: flex;
     flex-direction: row;
@@ -95,11 +88,6 @@
         padding: 0;
         justify-content: center;
     }
-    .meet-your-crew{
-        padding: 20px 0 40px 2%;
-        font-size: 20px;
-        letter-spacing: 3.38px;
-    }
     .crew-content{
        flex-direction: column;
        padding: 0;
@@ -157,11 +145,6 @@
        margin-top: 80px;
        align-items: center;
        text-align: center;
-    }
-    .meet-your-crew{
-        padding: 0 0 20px 0;
-        font-size: 16px;
-        letter-spacing: 2.7px;
     }
     .crew-content{
         flex-direction: column-reverse;

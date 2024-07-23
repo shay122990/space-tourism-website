@@ -11,7 +11,7 @@ const Destination = () => {
   return (
     <div className="page-container destination-home-page">
       <main className="main-destination-container">
-        <h1 className="pick-your-destination">
+        <h1 className="page-title pick-your-destination">
           <strong>01</strong> Pick your destination
         </h1>
         <div className="planets-content">

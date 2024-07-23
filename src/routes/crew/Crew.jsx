@@ -9,7 +9,7 @@ const Crew = () => {
   return (
     <div className="page-container crew-home-page">
       <div className="main-crew-container">
-        <h1 className="meet-your-crew">
+        <h1 className="page-title meet-your-crew">
           <strong>02</strong> Meet your crew
         </h1>
         <div className="crew-content">
