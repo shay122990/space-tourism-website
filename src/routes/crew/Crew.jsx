@@ -7,7 +7,7 @@ const Crew = () => {
   const [selectedCrew, setSelectedCrew] = useState(crewData[0]);
 
   return (
-    <div className="crew-home-page">
+    <div className="page-container crew-home-page">
       <div className="main-crew-container">
         <h1 className="meet-your-crew">
           <strong>02</strong> Meet your crew

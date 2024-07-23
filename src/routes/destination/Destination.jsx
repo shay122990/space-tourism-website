@@ -9,7 +9,7 @@ const Destination = () => {
   );
 
   return (
-    <div className="destination-home-page">
+    <div className="page-container destination-home-page">
       <main className="main-destination-container">
         <h1 className="pick-your-destination">
           <strong>01</strong> Pick your destination
