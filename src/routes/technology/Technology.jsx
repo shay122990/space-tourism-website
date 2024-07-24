@@ -24,12 +24,20 @@ const Technology = () => {
   }, [selectedTechnology]);
 
   return (
-    <div className="page-container technology-home-container">
+    <main className="technology-home-container">
       <div className="main-tech-container">
         <h1 className="page-title space-launch">
           <strong>03</strong> Space launch 101
         </h1>
         <div className="technology-content">
+          <div
+            id={`technology-panel-${selectedTechnology.id}`}
+            role="tabpanel"
+            aria-labelledby={`technology-tab-${selectedTechnology.id}`}
+            className="tech-image"
+          >
+            <img src={imageSrc} alt={selectedTechnology.name} />
+          </div>
           <div className="tech-details">
             <Tabs
               items={technologyData}
@@ -46,17 +54,9 @@ const Technology = () => {
               </p>
             </div>
           </div>
-          <div
-            id={`technology-panel-${selectedTechnology.id}`}
-            role="tabpanel"
-            aria-labelledby={`technology-tab-${selectedTechnology.id}`}
-            className="tech-image"
-          >
-            <img src={imageSrc} alt={selectedTechnology.name} />
-          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

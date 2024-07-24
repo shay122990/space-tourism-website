@@ -22,6 +22,7 @@ font-family: "Barlow Condensed", sans-serif;
 text-transform: uppercase;
 list-style-type: none;
 font-weight: 400;
+margin: 0;
 }
 p{
   font-family: "Barlow", sans-serif;
@@ -43,7 +44,7 @@ body {
   flex-direction: column;
   height: 100dvh;
 }
-.page-container{
+main{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +56,7 @@ body {
 .page-title{
   font-size: 28px;
   letter-spacing: 4.72px;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 .page-title strong{
   opacity: 0.4;
@@ -63,14 +64,14 @@ body {
 
 @media (max-width: 1000px){
   .page-title{
-    padding: 20px 0 40px 2%;
+    /* padding: 20px 0 40px 2%; */
     font-size: 20px;
     letter-spacing: 3.38px;
   }
 }
 @media (max-width: 500px){
   .page-title{
-    padding: 0 0 20px 0;
+    /* padding: 0 0 20px 0; */
     font-size: 16px;
     letter-spacing: 2.7px;
   }

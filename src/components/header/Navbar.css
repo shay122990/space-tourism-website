@@ -64,6 +64,7 @@
 }
 /* reponsive */
 @media (max-width: 1211px) {
+  
   .nav-links {
     padding-right: 100px;
     width: 80%;
@@ -79,6 +80,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    
   }
   .nav-links {
     width: 60%;

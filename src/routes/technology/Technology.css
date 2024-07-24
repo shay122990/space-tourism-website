@@ -1,23 +1,21 @@
-.technology-home-container{
+/* .technology-home-container{
   background-image: url(../../assets/technology/background-technology-desktop.jpg);
 }
 .main-tech-container{
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 0 0 0 12%;
-}
-
-.space-launch strong{
-  opacity: 0.4;
+  border: 1px solid red;
+  height: 100vh;
 }
 .technology-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  border: 1px solid pink;
 }
 .tech-details{
   display: flex;
@@ -25,6 +23,7 @@
   align-items: center;
   gap: 10%;
   width: 60%;
+  border: 1px solid blue;
 }
 .tech-tab-buttons{
   display: flex;
@@ -77,7 +76,6 @@
   line-height: 32px;
 }
 
-/* TABLET VIEW */
 @media (max-width: 1000px) {
     .main-tech-container{
       padding: 0;
@@ -118,7 +116,6 @@
     } 
 }
 
-  /* MOBILE VIEW */
   @media (max-width: 500px) {
     .main-tech-container{
       align-items: center;
@@ -153,4 +150,172 @@
       line-height: 25px;
     }
   }
-  
+   */
+   
+.technology-home-container{
+  background-image: url(../../assets/technology/background-technology-mobile.jpg);
+}
+.main-tech-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 80px;
+  align-items:center;
+  text-align: center;
+}
+.space-launch{
+  height: 3rem;
+}
+.technology-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tech-image img{
+  width: 100%;
+  height: 170px;
+}
+.tech-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.tech-tab-buttons{
+  display: flex;
+  flex-direction: row;
+  padding:0;
+  gap: 16px;
+}
+.tech-tab-buttons .tab-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--hover-color);
+  font-size: 16px;
+  font-family: "Bellefair", sans-serif;
+  background: transparent;
+}
+.tech-tab-buttons .tab-item:hover{
+  border: 1px solid var(--text-color-main);
+}
+.tech-tab-buttons .tab-item.active{
+  background-color: var(--text-color-main);
+  color: #0B0D17;
+}
+.tech-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+}
+.terminology{
+  padding: 1rem 0 0.4rem 0;
+  color: var(--text-color-one);
+  font-size: 14px;
+  letter-spacing: 2.36px;
+}
+.tech-name{
+  margin: 0;
+  text-transform: uppercase;
+}
+.tech-description{
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color-one);
+}
+
+@media (min-width:500px){
+  .technology-home-container{
+    background-image: url(../../assets//technology/background-technology-tablet.jpg);
+  }
+  .main-tech-container{
+     padding-top: 140px;
+     align-items: flex-start;
+     gap: 1rem;
+   }
+  .space-launch{
+    padding-left: 3rem;
+  } 
+  .tech-image img{
+      height: 310px;
+   }
+  .tech-tab-buttons{
+    padding: 1rem 0;
+  }
+  .tech-tab-buttons .tab-item{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+  .tech-info{
+    padding: 0 8rem;
+  }
+  .terminology{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: var(--text-color-one);
+    padding-bottom: 1rem;
+  }
+  .tech-name{
+    font-size: 40px;
+  }
+  .tech-description{
+    font-size: 16px;
+    line-height: 28px;
+  } 
+}
+@media (min-width:1000px){
+  .technology-home-container{
+    background-image: url(../../assets//technology/background-technology-desktop.jpg);
+    text-align: left;
+  }
+  .main-tech-container{
+    border: 1px dotted yellow;
+    
+  }
+  .space-launch{
+    width: 100%;
+    padding: 0 0 0 6rem;
+    text-align: left;
+  }
+  .technology-content{
+    flex-direction: row-reverse;
+    border: 1px dotted lime;
+    width: 100%;
+    justify-content: start;
+    padding: 0 0 0 6rem;
+  }
+  .tech-image img{
+    width:515px;
+    height: 527px;
+  }
+  .tech-details{
+    border: 1px solid red;
+    flex-direction: row;
+    align-items: center; 
+  }
+  .tech-tab-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tech-tab-buttons .tab-item{
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+  .tech-info{
+    border: 1px solid pink;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0;
+    height: 300px;
+    width: 470px;
+  }
+}
