@@ -1,13 +1,12 @@
-.destination-home-page {
-  background-image: url(../../assets/destination/background-destination-desktop.jpg);
-}
-.main-destination-container{
+
+.destination-container{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 0 0 0 12%;
   height: 100vh;
+  background-image: url(../../assets/destination/background-destination-desktop.jpg);
 }
 .planets-content {
   display: flex;

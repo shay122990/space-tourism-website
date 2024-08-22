@@ -2,7 +2,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div className=" page-container home-container">
+    <main className="home-container">
       <div className="space-info-container">
         <main className="main-info">
           <p className="intro">So, you want to travel to</p>
@@ -20,7 +20,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -24,7 +24,7 @@ const Technology = () => {
   }, [selectedTechnology]);
 
   return (
-    <main className="technology-home-container">
+    <main className="technology-container">
       <div className="main-tech-container">
         <h1 className="page-title space-launch">
           <strong>03</strong> Space launch 101

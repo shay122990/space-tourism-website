@@ -32,7 +32,8 @@ a {
 }
 body {
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   overflow-y: auto;
